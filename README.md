@@ -27,8 +27,6 @@ This project involves creating a web clone of Nike's website, focusing on develo
 - **Men Page**
 - **Women Page**
 - **Kids Page**
-- **Jordan Page**
-- **Sale Page**
 
 ## Timeline
 
@@ -59,9 +57,6 @@ This project involves creating a web clone of Nike's website, focusing on develo
 - HTML
 - CSS
 - JavaScript
-- Bootstrap
-- Vite
-- Vue.js
 - Tailwind CSS
 
 ### Testing Tools:
@@ -74,62 +69,59 @@ This project involves creating a web clone of Nike's website, focusing on develo
 
 ```
 project-root/
-├── .gitignore
-├── README.md
-├── index.html
-├── package.json
-├── vite.config.js
-├── publish/
-│   ├── assets/
-│   ├── css/
-│   ├── js/
+│
+├── assets/
+│   ├── fonts/
+│   │   └── (font files)
 │   ├── images/
-├── src/
-│   ├── assets/
-│   │   ├── images/
-│   │   │   └── logo.png
-│   │   ├── styles/
-│   │   │   └── custom.css
-│   ├── components/
-│   │   ├── Header/
-│   │   │   ├── Header.vue
-│   │   │   └── header.js
-│   │   ├── Footer/
-│   │   │   ├── Footer.vue
-│   │   │   └── footer.js
-│   ├── pages/
-│   │   ├── Home/
-│   │   │   └── Home.vue
-│   │   ├── Product/
-│   │   │   └── Product.vue
-│   ├── App.vue
-│   ├── main.js
-├── tailwind.config.js
+│   │   └── (image files)
+│   └── videos/
+│       └── (video files)
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   └── script.js
+│
+├── components/
+│   ├── header/
+│   │   ├── header.html
+│   │   └── header.css
+│   │
+│   ├── footer/
+│   │   ├── footer.html
+│   │   └── footer.css
+│   │
+│   └── ...
+│
+├── pages/
+│   ├── index.html
+│   ├── about.html
+│   ├── contact.html
+│   └── ...
+│
+├── .gitignore
+├── package.json
+├── README.md
+└── index.html
+
 ```
 
 ### Folder and File Description:
 
-- **publish/**: Contains static assets that need to be served as-is, including the main HTML file and other resources like images.
 - **index.html**: The main HTML file.
 - **src/**: Contains all the source code for the website.
   - **assets/**: Stores images and styles.
-    - **images/**: Directory for images.
-    - **styles/**: Directory for CSS stylesheets.
-      - **custom.css**: Custom CSS file for additional styles.
-  - **components/**: Directory for Vue components.
+    - **images/**: Directory for images..
+- **components/**: Directory for Vue components.
     - **Header/**: Contains header component files.
-      - **Header.vue**: Vue component file for the header.
-      - **header.js**: JavaScript file related to the header.
+        - **header.js**: JavaScript file related to the header.
     - **Footer/**: Contains footer component files.
-      - **Footer.vue**: Vue component file for the footer.
-      - **footer.js**: JavaScript file related to the footer.
-  - **pages/**: Directory for Vue page components.
+        - **footer.js**: JavaScript file related to the footer.
+- **pages/**: Directory for Vue page components.
     - **Home/**: Contains the Home page component.
-      - **Home.vue**: Vue component file for the Home page.
     - **Product/**: Contains the Product page component.
-      - **Product.vue**: Vue component file for the Product page.
-  - **App.vue**: The root Vue component.
-  - **main.js**: The main JavaScript file to initialize the Vue app.
 - **tailwind.config.js**: Configuration file for Tailwind CSS.
 
 ## Style Guides
@@ -147,11 +139,13 @@ project-root/
 - **nike-text-white**: #FFFFFF (White)
 - **nike-text-charcoal**: #111111 (Dark Charcoal Gray)
 - **nike-text-warm**: #757575 (Warm Gray)
+- **nike-text-orange-red**: #9E3500 (Orange-red)
+
 
 ### Fonts:
-- Helvetica
-- Arial
-- sans-serif
+- Futura Condensed Extra Bold
+- HelveticaNowText-Medium
+- HelveticaNowText-Regular
 
 ### Naming Conventions in Program:
 - **JavaScript**: camelCase for variable and function names.
