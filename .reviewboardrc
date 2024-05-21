@@ -1,0 +1,5 @@
+REVIEWBOARD_URL = "https://review.clp.kr/"
+REPOSITORY = "CyberNexus/Hong-Than-Brathana/Nike-clone"
+REPOSITORY_TYPE = "git"
+BRANCH = "feature/navbar-component"
+LAND_DEST_BRANCH = "feature/navbar-component"

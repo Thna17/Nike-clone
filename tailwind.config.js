@@ -33,6 +33,16 @@ module.exports = {
         'nike-text-warm': '#757575',
         'nike-text-orange-red': '#9E3500',
       },
+      padding: {
+        'desktop' : '0 38px 0 36px',
+        'teblet' : '0 14px 0 16px'
+      },
+      screens: {
+        'tablet' : '960px'
+      },
+      height: {
+        '15' : '60px'
+      }
     },
   },
   plugins: [  

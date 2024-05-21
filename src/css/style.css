@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    font-family: HelveticaNowText-Medium;
+}
+@media (min-width:961px) {
+    #hidden {
+        display: none;
+    }
+}

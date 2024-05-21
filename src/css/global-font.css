@@ -7,6 +7,8 @@
 @font-face {
     font-family: HelveticaNowText-Medium;
     src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
+    font-weight: 700;
+   
 }
 @font-face {
     font-family: HelveticaNowText-Regular ;
