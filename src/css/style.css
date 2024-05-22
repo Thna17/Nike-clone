@@ -1,6 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: Futura;
+    src: url(../assets/fonts/Futura\ Condensed\ Extra\ Bold.otf);
+}
+@font-face {
+    font-family: HelveticaNowText-Medium;
+    src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
+    font-weight: 700;
+   
+}
+@font-face {
+    font-family: HelveticaNowText-Regular ;
+    src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
+}
+
 body {
     font-family: HelveticaNowText-Medium;
     overflow-x: hidden;
@@ -10,6 +25,12 @@ body {
         display: none;
     }
 }
+<<<<<<< HEAD
+=======
+h1 {
+    font-family: Futura;
+}
+>>>>>>> bc4257e (Add: Develop layout1-3)
 @media (max-width: 960px) {
     #image {
         object-fit: cover;
