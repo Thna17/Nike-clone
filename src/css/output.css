@@ -694,18 +694,6 @@ video {
   margin-top: 24px;
 }
 
-.mt-\[48px\] {
-  margin-top: 48px;
-}
-
-.mt-\[84px\] {
-  margin-top: 84px;
-}
-
-.block {
-  display: block;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -770,46 +758,6 @@ video {
   width: 100vw;
 }
 
-.min-w-\[300px\] {
-  min-width: 300px;
-}
-
-.min-w-\[400px\] {
-  min-width: 400px;
-}
-
-.max-w-\[1920px\] {
-  max-width: 1920px;
-}
-
-.max-w-\[610px\] {
-  max-width: 610px;
-}
-
-.max-w-\[700px\] {
-  max-width: 700px;
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
 .items-center {
   align-items: center;
 }
@@ -830,18 +778,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[10px\] {
-  gap: 10px;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-
 .text-wrap {
   text-wrap: wrap;
 }
@@ -856,6 +792,10 @@ video {
 
 .rounded-\[20px\] {
   border-radius: 20px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-full {
@@ -1018,19 +958,6 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
-}
-
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -1144,6 +1071,26 @@ video {
   src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
 }
 
+@font-face {
+  font-family: Futura;
+
+  src: url(../assets/fonts/Futura\ Condensed\ Extra\ Bold.otf);
+}
+
+@font-face {
+  font-family: HelveticaNowText-Medium;
+
+  src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
+
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: HelveticaNowText-Regular ;
+
+  src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
+}
+
 body {
   font-family: HelveticaNowText-Regular;
   overflow-x: hidden;
@@ -1164,16 +1111,20 @@ h1 {
   font-family: Futura;
 }
 
+<<<<<<< HEAD
+=======
+h1 {
+  font-family: Futura;
+}
+
+>>>>>>> bc4257e (Add: Develop layout1-3)
 @media (max-width: 960px) {
   #image {
     -o-object-fit: cover;
        object-fit: cover;
   }
 
-  h1 {
-    font-size: 36px;
-  }
-
+@media (max-width: 960px) {
   .max-\[960px\]\:hidden {
     display: none;
   }
@@ -1186,14 +1137,6 @@ h1 {
 @media (max-width: 600px) {
   .max-\[600px\]\:hidden {
     display: none;
-  }
-
-  .max-\[600px\]\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
-  .max-\[600px\]\:flex-col {
-    flex-direction: column;
   }
 
   .max-\[600px\]\:text-left {
@@ -1228,6 +1171,12 @@ h1 {
 
   .min-\[600px\]\:flex-col {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) {
+  .min-\[601px\]\:hidden {
+    display: none;
   }
 }
 

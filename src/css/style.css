@@ -1,11 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-    font-family: Futura;
-    src: url(../assets/fonts/Futura\ Condensed\ Extra\ Bold.otf);
-}
-@font-face {
+body {
     font-family: HelveticaNowText-Medium;
     src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
     font-weight: 700;
@@ -32,6 +28,12 @@ body {
 h1 {
     font-family: Futura;
 }
+<<<<<<< HEAD
+=======
+h1 {
+    font-family: Futura;
+}
+>>>>>>> bc4257e (Add: Develop layout1-3)
 @media (max-width: 960px) {
     #image {
         object-fit: cover;
