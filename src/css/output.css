@@ -657,26 +657,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-\[48px\] {
-  margin-top: 48px;
-}
-
-.mb-2\.5 {
-  margin-bottom: 0.625rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.block {
-  display: block;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -766,14 +746,6 @@ video {
   max-width: 1536px;
 }
 
-.max-w-\[500px\] {
-  max-width: 500px;
-}
-
-.max-w-\[700px\] {
-  max-width: 700px;
-}
-
 =======
 >>>>>>> 972859f (add: develop hero component)
 .grid-cols-2 {
@@ -784,13 +756,6 @@ video {
   flex-direction: row;
 }
 
-<<<<<<< HEAD
-.flex-row {
-  flex-direction: row;
-}
-
-=======
->>>>>>> 972859f (add: develop hero component)
 .flex-col {
   flex-direction: column;
 }
@@ -840,6 +805,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .text-wrap {
@@ -1136,6 +1105,26 @@ video {
   src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
 }
 
+@font-face {
+  font-family: Futura;
+
+  src: url(../assets/fonts/Futura\ Condensed\ Extra\ Bold.otf);
+}
+
+@font-face {
+  font-family: HelveticaNowText-Medium;
+
+  src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
+
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: HelveticaNowText-Regular ;
+
+  src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
+}
+
 body {
   font-family: HelveticaNowText-Medium;
   overflow-x: hidden;
@@ -1151,6 +1140,13 @@ h1 {
   font-family: Futura;
 }
 
+<<<<<<< HEAD
+=======
+h1 {
+  font-family: Futura;
+}
+
+>>>>>>> bc4257e (Add: Develop layout1-3)
 @media (max-width: 960px) {
   #image {
     -o-object-fit: cover;
@@ -1159,8 +1155,6 @@ h1 {
 
   h1 {
     font-size: 36px;
-<<<<<<< HEAD
-=======
   }
 
   .max-\[960px\]\:hidden {
@@ -1189,6 +1183,12 @@ h1 {
 
 @media (min-width: 600px) {
   .min-\[600px\]\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  .min-\[601px\]\:hidden {
     display: none;
   }
 }
