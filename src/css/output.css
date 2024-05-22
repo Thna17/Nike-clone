@@ -678,6 +678,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-\[12px\] {
   margin-top: 12px;
 }
@@ -688,6 +692,10 @@ video {
 
 .mt-\[24px\] {
   margin-top: 24px;
+}
+
+.mt-\[48px\] {
+  margin-top: 48px;
 }
 
 .mt-\[84px\] {
@@ -720,6 +728,10 @@ video {
 
 .h-9 {
   height: 2.25rem;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-auto {
@@ -774,10 +786,6 @@ video {
   min-width: 400px;
 }
 
-.min-w-\[500px\] {
-  min-width: 500px;
-}
-
 .max-w-\[1920px\] {
   max-width: 1920px;
 }
@@ -788,10 +796,6 @@ video {
 
 .max-w-\[700px\] {
   max-width: 700px;
-}
-
-.max-w-screen-2xl {
-  max-width: 1536px;
 }
 
 .flex-shrink-0 {
@@ -834,10 +838,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
 .gap-\[10px\] {
   gap: 10px;
 }
@@ -860,6 +860,10 @@ video {
 
 .rounded-\[20px\] {
   border-radius: 20px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-2 {
@@ -907,6 +911,11 @@ video {
      object-fit: cover;
 }
 
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -934,6 +943,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-\[16px\] {
   padding-left: 16px;
   padding-right: 16px;
@@ -957,6 +971,11 @@ video {
 .py-1\.5 {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-\[6px\] {
@@ -1007,8 +1026,17 @@ video {
   line-height: 2rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-\[12px\] {
   font-size: 12px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .text-\[18px\] {
@@ -1025,6 +1053,10 @@ video {
 
 .text-\[36px\] {
   font-size: 36px;
+}
+
+.text-\[75px\] {
+  font-size: 75px;
 }
 
 .text-lg {
@@ -1100,17 +1132,9 @@ video {
   outline-offset: 2px;
 }
 
-@font-face {
-  font-family: Futura;
-
-  src: url(../assets/fonts/Futura\ Condensed\ Extra\ Bold.otf);
-}
-
-@font-face {
+body {
   font-family: HelveticaNowText-Medium;
-
   src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
-
   font-weight: 700;
 }
 
@@ -1200,6 +1224,12 @@ h1 {
 
   .min-\[600px\]\:flex-col {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) {
+  .min-\[601px\]\:hidden {
+    display: none;
   }
 }
 
