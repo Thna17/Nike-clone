@@ -47,15 +47,12 @@ module.exports = {
         tab: '960px',
         mob: '600px'
       },
-    screens: {
-      tab: '960px',
-      mob: '600px'
+      fontFamily: {
+        Futura: 'Futura',
+        HelveticaNowText_Regular: 'HelveticaNowText-Regular',
+        HelveticaNowText_Medium: 'HelveticaNowText-Medium'
+      }
     },
-    fontFamily: {
-      Futura: 'Futura',
-      HelveticaNowText_Regular: 'HelveticaNowText-Regular',
-      HelveticaNowText_Medium: 'HelveticaNowText-Medium'
-    }
   },
   plugins: [  
     require('tailwindcss'),

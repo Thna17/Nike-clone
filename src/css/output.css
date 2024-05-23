@@ -985,13 +985,6 @@ video {
   font-family: HelveticaNowText-Regular;
 }
 
-<<<<<<< HEAD
-.font-HelveticaNowText_Regular {
-  font-family: HelveticaNowText-Regular;
-}
-
-=======
->>>>>>> d341181 (add: Develop image-card 100%)
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -1229,21 +1222,21 @@ h1 {
   .min-\[601px\]\:hidden {
     display: none;
   }
+}
 
-  .tab\:min-h-\[400px\] {
-    min-height: 400px;
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
   }
 }
 
 @media (min-width: 960px) {
-  .tab\:min-w-\[450px\] {
-    min-width: 450px;
-  }
-
-  .tab\:min-w-\[500px\] {
-    min-width: 500px;
-  }
-
   .min-\[960px\]\:text-\[56px\] {
     font-size: 56px;
   }
