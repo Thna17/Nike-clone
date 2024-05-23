@@ -678,6 +678,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-\[12px\] {
   margin-top: 12px;
 }
@@ -692,6 +696,14 @@ video {
 
 .mt-\[84px\] {
   margin-top: 84px;
+}
+
+.mt-\[48px\] {
+  margin-top: 48px;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -716,6 +728,10 @@ video {
 
 .h-9 {
   height: 2.25rem;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-auto {
@@ -770,6 +786,7 @@ video {
   min-width: 400px;
 }
 
+<<<<<<< HEAD
 .min-w-\[500px\] {
   min-width: 500px;
 }
@@ -794,22 +811,30 @@ video {
   flex-shrink: 0;
 }
 
+=======
+>>>>>>> 972859f (add: develop hero component)
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+<<<<<<< HEAD
 .flex-row {
   flex-direction: row;
 }
 
+=======
+>>>>>>> 972859f (add: develop hero component)
 .flex-col {
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 .flex-wrap {
   flex-wrap: wrap;
 }
 
+=======
+>>>>>>> 972859f (add: develop hero component)
 .items-center {
   align-items: center;
 }
@@ -862,6 +887,10 @@ video {
   border-radius: 20px;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -902,6 +931,16 @@ video {
   fill: none;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -929,6 +968,19 @@ video {
   padding-right: 1rem;
 }
 
+<<<<<<< HEAD
+=======
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-\[16px\] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+>>>>>>> 972859f (add: develop hero component)
 .px-\[20px\] {
   padding-left: 20px;
   padding-right: 20px;
@@ -1012,6 +1064,10 @@ video {
   font-size: 36px;
 }
 
+.text-\[75px\] {
+  font-size: 75px;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1037,6 +1093,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .font-semibold {
@@ -1116,6 +1176,31 @@ h1 {
 
   h1 {
     font-size: 36px;
+<<<<<<< HEAD
+=======
+  }
+
+  .max-\[960px\]\:hidden {
+    display: none;
+  }
+
+  .max-\[960px\]\:p-teblet {
+    padding: 0 14px 0 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .max-\[600px\]\:hidden {
+    display: none;
+  }
+
+  .max-\[600px\]\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .max-\[600px\]\:text-left {
+    text-align: left;
+>>>>>>> 972859f (add: develop hero component)
   }
 
   .max-\[960px\]\:hidden {
@@ -1171,9 +1256,9 @@ h1 {
   }
 }
 
-@media (min-width: 640px) {
-  .sm\:text-center {
-    text-align: center;
+@media (min-width: 601px) {
+  .min-\[601px\]\:hidden {
+    display: none;
   }
 }
 
@@ -1194,6 +1279,13 @@ h1 {
 
   .min-\[960px\]\:text-\[56px\] {
     font-size: 56px;
+<<<<<<< HEAD
+=======
+  }
+
+  .min-\[960px\]\:text-\[65px\] {
+    font-size: 65px;
+>>>>>>> 972859f (add: develop hero component)
   }
 }
 

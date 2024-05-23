@@ -45,9 +45,13 @@ module.exports = {
         mob: '600px'
       },
       fontFamily: {
+<<<<<<< HEAD
         Futura: 'Futura',
         HelveticaNowText_Regular: 'HelveticaNowText-Regular',
         HelveticaNowText_Medium: 'HelveticaNowText-Medium'
+=======
+        Futura: 'Futura'
+>>>>>>> 972859f (add: develop hero component)
       }
     },
   },
