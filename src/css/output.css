@@ -615,12 +615,24 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-\[12px\] {
   margin-top: 12px;
 }
 
 .mt-\[24px\] {
   margin-top: 24px;
+}
+
+.mt-\[48px\] {
+  margin-top: 48px;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -645,6 +657,10 @@ video {
 
 .h-9 {
   height: 2.25rem;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-auto {
@@ -763,6 +779,10 @@ video {
   border-radius: 20px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -807,6 +827,16 @@ video {
   fill: none;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -834,9 +864,19 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-\[16px\] {
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .px-\[48px\] {
@@ -854,9 +894,19 @@ video {
   padding-bottom: 0.375rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.py-\[7px\] {
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .py-\[8px\] {
@@ -885,8 +935,17 @@ video {
   line-height: 2rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-\[12px\] {
   font-size: 12px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .text-\[18px\] {
@@ -899,6 +958,10 @@ video {
 
 .text-\[36px\] {
   font-size: 36px;
+}
+
+.text-\[75px\] {
+  font-size: 75px;
 }
 
 .text-lg {
@@ -921,6 +984,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .font-semibold {
@@ -976,6 +1043,11 @@ body {
 @media (min-width:961px) {
   #hidden {
     display: none;
+  }
+
+  h1 {
+    font-size: 75px;
+    letter-spacing: -6px;
   }
 }
 
@@ -1050,13 +1122,17 @@ h1 {
   }
 }
 
-@media (min-width: 640px) {
-  .sm\:text-center {
-    text-align: center;
+@media (min-width: 601px) {
+  .min-\[601px\]\:hidden {
+    display: none;
   }
 }
 
 @media (min-width: 960px) {
+  .min-\[960px\]\:text-\[56px\] {
+    font-size: 56px;
+  }
+
   .min-\[960px\]\:text-\[65px\] {
     font-size: 65px;
   }

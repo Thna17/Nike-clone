@@ -20,6 +20,13 @@ body {
     #hidden {
         display: none;
     }
+    h1 {
+        font-size: 75px;
+        letter-spacing: -6px;
+    }
+}
+h1 {
+    font-family: Futura;
 }
 h1 {
     font-family: Futura;
