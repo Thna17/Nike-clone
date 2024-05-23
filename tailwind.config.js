@@ -34,8 +34,11 @@ module.exports = {
         'nike-text-orange-red': '#9E3500',
       },
       padding: {
-        'desktop': '0 38px 0 36px',
-        'tablet': '0 14px 0 16px'
+        'desktop' : '0 38px 0 36px',
+        'teblet' : '0 14px 0 16px'
+      },
+      screens: {
+        'tablet' : '960px'
       },
       height: {
         '15' : '60px'
@@ -44,16 +47,12 @@ module.exports = {
         tab: '960px',
         mob: '600px'
       },
+      fontFamily: {
+        Futura: 'Futura',
+        HelveticaNowText_Regular: 'HelveticaNowText-Regular',
+        HelveticaNowText_Medium: 'HelveticaNowText-Medium'
+      }
     },
-    screens: {
-      tab: '960px',
-      mob: '600px'
-    },
-    fontFamily: {
-      Futura: 'Futura',
-      HelveticaNowText_Regular: 'HelveticaNowText-Regular',
-      HelveticaNowText_Medium: 'HelveticaNowText-Medium'
-    }
   },
   plugins: [
     require('tailwindcss'),
