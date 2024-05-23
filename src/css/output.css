@@ -644,6 +644,10 @@ video {
   margin-top: 12px;
 }
 
+.mt-\[18px\] {
+  margin-top: 18px;
+}
+
 .mt-\[24px\] {
   margin-top: 24px;
 }
@@ -656,8 +660,8 @@ video {
   margin-top: 84px;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -736,12 +740,32 @@ video {
   min-width: 300px;
 }
 
+.max-w-\[610px\] {
+  max-width: 610px;
+}
+
+.max-w-\[700px\] {
+  max-width: 700px;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -792,16 +816,8 @@ video {
   border-radius: 20px;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-2 {
@@ -844,19 +860,14 @@ video {
   fill: none;
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.object-left-top {
-  -o-object-position: left top;
-     object-position: left top;
+.object-left {
+  -o-object-position: left;
+     object-position: left;
 }
 
 .p-2 {
@@ -896,6 +907,11 @@ video {
   padding-right: 16px;
 }
 
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .px-\[48px\] {
   padding-left: 48px;
   padding-right: 48px;
@@ -921,14 +937,22 @@ video {
   padding-bottom: 6px;
 }
 
+.py-\[7px\] {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-\[16px\] {
+  padding-top: 16px;
 }
 
 .text-center {
@@ -937,10 +961,6 @@ video {
 
 .font-Futura {
   font-family: Futura;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl {
@@ -1031,9 +1051,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+.underline {
+  text-decoration-line: underline;
 }
 
 .outline-none {
@@ -1087,6 +1106,10 @@ h1 {
        object-fit: cover;
   }
 
+  h1 {
+    font-size: 36px;
+  }
+
   .max-\[960px\]\:hidden {
     display: none;
   }
@@ -1097,8 +1120,8 @@ h1 {
     display: none;
   }
 
-  .max-\[600px\]\:flex-row {
-    flex-direction: row;
+  .max-\[600px\]\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .max-\[600px\]\:flex-col {
@@ -1111,46 +1134,42 @@ h1 {
 }
 
 @media (min-width: 600px) {
+  .mob\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .mob\:flex {
+    display: flex;
+  }
+
+  .mob\:flex-row {
+    flex-direction: row;
+  }
+
+  .mob\:items-end {
+    align-items: flex-end;
+  }
+
+  .mob\:justify-end {
+    justify-content: flex-end;
+  }
+
   .min-\[600px\]\:hidden {
+    display: none;
+  }
+
+  .min-\[600px\]\:flex-col {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) {
+  .min-\[601px\]\:hidden {
     display: none;
   }
 }
 
-@media (min-width: 640px) {
-  .sm\:text-center {
-    text-align: center;
-  }
-}
-
 @media (min-width: 960px) {
-  .tab\:max-h-\[\] {
-    max-height: ;
-  }
-
-  .tab\:max-h-\[400px\] {
-    max-height: 400px;
-  }
-
-  .tab\:max-h-\[500px\] {
-    max-height: 500px;
-  }
-
-  .tab\:max-h-\[600px\] {
-    max-height: 600px;
-  }
-
-  .tab\:max-h-\[700px\] {
-    max-height: 700px;
-  }
-
-  .tab\:max-h-\[800px\] {
-    max-height: 800px;
-  }
-
-  .tab\:min-h-\[400px\] {
-    min-height: 400px;
-  }
-
   .tab\:min-w-\[450px\] {
     min-width: 450px;
   }

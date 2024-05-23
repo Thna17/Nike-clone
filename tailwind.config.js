@@ -43,6 +43,13 @@ module.exports = {
       },
       height: {
         '15' : '60px'
+      },
+      screens: {
+        tab: '960px',
+        mob: '600px'
+      },
+      fontFamily: {
+        Futura: 'Futura'
       }
     },
     screens: {
