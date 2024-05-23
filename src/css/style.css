@@ -27,9 +27,12 @@ body {
 }
 h1 {
     font-family: Futura;
+<<<<<<< HEAD
 }
 h1 {
     font-family: Futura;
+=======
+>>>>>>> 5b880a5 (add: develop hero component)
 }
 @media (max-width: 960px) {
     #image {
