@@ -694,16 +694,16 @@ video {
   margin-top: 84px;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .hidden {
@@ -770,10 +770,6 @@ video {
   min-width: 400px;
 }
 
-.min-w-\[500px\] {
-  min-width: 500px;
-}
-
 .max-w-\[1920px\] {
   max-width: 1920px;
 }
@@ -786,16 +782,8 @@ video {
   max-width: 700px;
 }
 
-.max-w-screen-2xl {
-  max-width: 1536px;
-}
-
 .flex-shrink-0 {
   flex-shrink: 0;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -828,10 +816,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .gap-\[10px\] {
@@ -935,6 +919,11 @@ video {
   padding-right: 16px;
 }
 
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .px-\[48px\] {
   padding-left: 48px;
   padding-right: 48px;
@@ -953,6 +942,11 @@ video {
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.py-\[7px\] {
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .py-\[8px\] {
@@ -1038,6 +1032,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .font-semibold {
@@ -1131,6 +1129,24 @@ h1 {
   h1 {
     font-size: 36px;
   }
+
+  .max-\[960px\]\:hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .max-\[600px\]\:hidden {
+    display: none;
+  }
+
+  .max-\[600px\]\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-\[600px\]\:text-left {
+    text-align: left;
+  }
 }
 
 @media (min-width: 600px) {
@@ -1153,6 +1169,14 @@ h1 {
   .mob\:justify-end {
     justify-content: flex-end;
   }
+
+  .min-\[600px\]\:hidden {
+    display: none;
+  }
+
+  .min-\[600px\]\:flex-col {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1162,5 +1186,35 @@ h1 {
 
   .sm\:text-center {
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-\[calc\(33\.33\%-10px\)\] {
+    width: calc(33.33% - 10px);
+  }
+}
+
+@media (min-width: 960px) {
+  .tab\:min-w-\[450px\] {
+    min-width: 450px;
+  }
+
+  .tab\:min-w-\[500px\] {
+    min-width: 500px;
+  }
+
+  .min-\[960px\]\:text-\[56px\] {
+    font-size: 56px;
+  }
+
+  .min-\[960px\]\:text-\[65px\] {
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 961px) {
+  .min-\[961px\]\:left-10 {
+    left: 2.5rem;
   }
 }
