@@ -564,39 +564,9 @@ video {
   }
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
 @media (min-width: 960px) {
   .container {
     max-width: 960px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
   }
 }
 
@@ -790,10 +760,6 @@ video {
   max-width: 700px;
 }
 
-.max-w-screen-2xl {
-  max-width: 1536px;
-}
-
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -907,6 +873,11 @@ video {
      object-fit: cover;
 }
 
+.object-left {
+  -o-object-position: left;
+     object-position: left;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -986,10 +957,6 @@ video {
 
 .font-HelveticaNowText_Regular {
   font-family: HelveticaNowText-Regular;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl {
@@ -1111,18 +1078,29 @@ body {
   #hidden {
     display: none;
   }
+
+  h1 {
+    font-size: 75px;
+    letter-spacing: -6px;
+  }
 }
 
 h1 {
   font-family: Futura;
 }
 
+<<<<<<< HEAD
+=======
+h1 {
+  font-family: Futura;
+}
+
+>>>>>>> bc4257e (Add: Develop layout1-3)
 @media (max-width: 960px) {
   #image {
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   h1 {
     font-size: 36px;
   }
@@ -1151,10 +1129,6 @@ h1 {
 }
 
 @media (min-width: 640px) {
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
   .sm\:text-center {
     text-align: center;
   }
