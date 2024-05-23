@@ -20,18 +20,12 @@ body {
     #hidden {
         display: none;
     }
-    h1 {
-        font-size: 75px;
-        letter-spacing: -6px;
-    }
-}
-h1 {
-    font-family: Futura;
 }
 <<<<<<< HEAD
 =======
 h1 {
     font-family: Futura;
+    
 }
 >>>>>>> bc4257e (Add: Develop layout1-3)
 @media (max-width: 960px) {

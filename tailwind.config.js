@@ -50,6 +50,10 @@ module.exports = {
         HelveticaNowText_Medium: 'HelveticaNowText-Medium'
       }
     },
+    screens: {
+      tab: '960px',
+      mob: '600px'
+    }
   },
   plugins: [  
     require('tailwindcss'),
