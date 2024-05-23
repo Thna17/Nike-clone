@@ -35,25 +35,21 @@ module.exports = {
       },
       padding: {
         'desktop': '0 38px 0 36px',
-        'tablet': '0 14px 0 16px' // Corrected typo
-      },
-      screens: {
-        'tablet': '960px', // Merged screen declarations
-        'mob': '600px'
+        'tablet': '0 14px 0 16px'
       },
       height: {
         '15' : '60px'
+      },
+      screens: {
+        tab: '960px',
+        mob: '600px'
+      },
+      fontFamily: {
+        Futura: 'Futura',
+        HelveticaNowText_Regular: 'HelveticaNowText-Regular',
+        HelveticaNowText_Medium: 'HelveticaNowText-Medium'
       }
     },
-    screens: {
-      tab: '960px',
-      mob: '600px'
-    },
-    fontFamily: {
-      Futura: 'Futura',
-      HelveticaNowText_Regular: 'HelveticaNowText-Regular',
-      HelveticaNowText_Medium: 'HelveticaNowText-Medium'
-    }
   },
   plugins: [
     require('tailwindcss'),
