@@ -1219,15 +1219,13 @@ h1 {
   }
 }
 
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
+  }
+}
+
 @media (min-width: 960px) {
-  .tab\:min-w-\[450px\] {
-    min-width: 450px;
-  }
-
-  .tab\:min-w-\[500px\] {
-    min-width: 500px;
-  }
-
   .min-\[960px\]\:text-\[56px\] {
     font-size: 56px;
   }
