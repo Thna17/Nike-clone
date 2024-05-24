@@ -1151,41 +1151,19 @@ h1 {
   .mob\:mb-0 {
     margin-bottom: 0px;
   }
+}
 
-  .mob\:flex {
-    display: flex;
-  }
-
-  .mob\:flex-row {
+@media (min-width: 640px) {
+  .sm\:flex-row {
     flex-direction: row;
   }
 
-  .mob\:items-end {
-    align-items: flex-end;
-  }
-
-  .mob\:justify-end {
-    justify-content: flex-end;
-  }
-
-  .min-\[600px\]\:hidden {
-    display: none;
-  }
-
-  .min-\[600px\]\:flex-col {
-    flex-direction: column;
+  .sm\:text-center {
+    text-align: center;
   }
 }
 
 @media (min-width: 960px) {
-  .tab\:min-w-\[450px\] {
-    min-width: 450px;
-  }
-
-  .tab\:min-w-\[500px\] {
-    min-width: 500px;
-  }
-
   .min-\[960px\]\:text-\[56px\] {
     font-size: 56px;
   }
