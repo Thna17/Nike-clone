@@ -963,8 +963,8 @@ video {
   font-family: Futura;
 }
 
-.font-HelveticaNowText_Regular {
-  font-family: HelveticaNowText-Regular;
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl {
@@ -1134,16 +1134,20 @@ h1 {
 }
 
 @media (min-width: 600px) {
-  .mob\:mb-0 {
-    margin-bottom: 0px;
+  .min-\[600px\]\:hidden {
+    display: none;
   }
+}
 
-  .mob\:flex {
-    display: flex;
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
   }
+}
 
-  .mob\:flex-row {
-    flex-direction: row;
+@media (min-width: 960px) {
+  .tab\:max-h-\[\] {
+    max-height: ;
   }
 
   .mob\:items-end {
