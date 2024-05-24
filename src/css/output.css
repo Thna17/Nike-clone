@@ -1233,7 +1233,9 @@ h1 {
   .tab\:min-h-\[400px\] {
     min-height: 400px;
   }
+}
 
+@media (min-width: 960px) {
   .tab\:min-w-\[450px\] {
     min-width: 450px;
   }
