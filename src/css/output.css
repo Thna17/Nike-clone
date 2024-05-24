@@ -381,7 +381,7 @@ textarea {
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
-  color: #707072;
+  color: #9ca3af;
   /* 2 */
 }
 
@@ -389,7 +389,7 @@ input::placeholder,
 textarea::placeholder {
   opacity: 1;
   /* 1 */
-  color: #707072;
+  color: #9ca3af;
   /* 2 */
 }
 
@@ -1059,7 +1059,7 @@ video {
 
 .text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(112 112 114 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -1108,18 +1108,16 @@ h1 {
   font-family: Futura;
 }
 
->>>>>>> bc4257e (Add: Develop layout1-3)
 @media (max-width: 960px) {
   #image {
     -o-object-fit: cover;
        object-fit: cover;
   }
+
   h1 {
     font-size: 36px;
   }
-}
 
-@media (max-width: 960px) {
   .max-\[960px\]\:hidden {
     display: none;
   }
