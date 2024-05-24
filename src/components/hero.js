@@ -8,8 +8,9 @@ class Hero extends HTMLElement {
         const imgUrlSm = this.getAttribute('img-url-sm') || '';
         const heading = this.getAttribute('heading') || '';
         const paragraph = this.getAttribute('paragraph') || '';
+        this.setAttribute('class', 'flex justify-center w-full')
         this.innerHTML = `
-            <div class="flex justify-center w-screen">
+           
                 <a href="" class=" w-full ">
                     <div class="w-full">
                         <img src="${imgUrlBg}" alt="" class="h-full w-full max-[600px]:hidden">
@@ -21,7 +22,7 @@ class Hero extends HTMLElement {
                         <div class="inline-block bg-black rounded-[20px] font-medium py-[7px] px-[20px] text-white text-[18px] mt-4 mb-4">Shop Summer Event</div>
                     </div>
                 </a>
-            </div>
+  
         `;
     }
 }
