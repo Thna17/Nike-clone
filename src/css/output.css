@@ -564,9 +564,39 @@ video {
   }
 }
 
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
 @media (min-width: 960px) {
   .container {
     max-width: 960px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
   }
 }
 
@@ -596,11 +626,6 @@ video {
 
 .z-10 {
   z-index: 10;
-}
-
-.mx-\[24px\] {
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .mx-\[48px\] {
@@ -816,10 +841,6 @@ video {
   overflow-x: scroll;
 }
 
-.text-wrap {
-  text-wrap: wrap;
-}
-
 .text-nowrap {
   text-wrap: nowrap;
 }
@@ -918,11 +939,6 @@ video {
   padding-right: 1.25rem;
 }
 
-.px-\[16px\] {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 .px-\[20px\] {
   padding-left: 20px;
   padding-right: 20px;
@@ -946,11 +962,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.py-\[6px\] {
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
 
 .py-\[7px\] {
@@ -979,10 +990,6 @@ video {
   text-align: center;
 }
 
-.font-Futura {
-  font-family: Futura;
-}
-
 .font-HelveticaNowText_Regular {
   font-family: HelveticaNowText-Regular;
 }
@@ -1009,20 +1016,12 @@ video {
   font-size: 16px;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
-}
-
 .text-\[20px\] {
   font-size: 20px;
 }
 
 .text-\[24px\] {
   font-size: 24px;
-}
-
-.text-\[36px\] {
-  font-size: 36px;
 }
 
 .text-\[75px\] {
@@ -1156,10 +1155,6 @@ h1 {
   .max-\[600px\]\:flex-col {
     flex-direction: column;
   }
-
-  .max-\[600px\]\:text-left {
-    text-align: left;
-  }
 }
 
 @media (min-width: 600px) {
@@ -1183,10 +1178,6 @@ h1 {
     justify-content: flex-end;
   }
 
-  .min-\[600px\]\:hidden {
-    display: none;
-  }
-
   .min-\[600px\]\:flex-col {
     flex-direction: column;
   }
@@ -1198,6 +1189,12 @@ h1 {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:w-\[calc\(33\.33\%-10px\)\] {
+    width: calc(33.33% - 10px);
+  }
+}
+
 @media (min-width: 960px) {
   .tab\:min-w-\[450px\] {
     min-width: 450px;
@@ -1205,14 +1202,6 @@ h1 {
 
   .tab\:min-w-\[500px\] {
     min-width: 500px;
-  }
-
-  .min-\[960px\]\:text-\[56px\] {
-    font-size: 56px;
-  }
-
-  .min-\[960px\]\:text-\[65px\] {
-    font-size: 65px;
   }
 }
 
