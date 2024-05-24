@@ -620,10 +620,6 @@ video {
   left: 3rem;
 }
 
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -690,6 +686,10 @@ video {
   margin-top: 48px;
 }
 
+.mt-\[84px\] {
+  margin-top: 84px;
+}
+
 .block {
   display: block;
 }
@@ -734,6 +734,15 @@ video {
   width: 1440px;
 }
 
+<<<<<<< HEAD
+.w-\[80\%\] {
+  width: 80%;
+=======
+.w-\[1920px\] {
+  width: 1920px;
+>>>>>>> d341181 (add: Develop image-card 100%)
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
@@ -752,14 +761,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[1440px\] {
-  width: 1440px;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .min-w-\[300px\] {
@@ -870,11 +871,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#111111\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
-}
-
 .fill-none {
   fill: none;
 }
@@ -893,6 +889,7 @@ video {
   padding: 0.5rem;
 }
 
+<<<<<<< HEAD
 .p-\[40px\] {
   padding: 40px;
 }
@@ -901,8 +898,14 @@ video {
   padding: 0 38px 0 36px;
 }
 
+=======
+>>>>>>> d341181 (add: Develop image-card 100%)
 .p-\[40px\] {
   padding: 40px;
+}
+
+.p-desktop {
+  padding: 0 38px 0 36px;
 }
 
 .px-2 {
@@ -982,10 +985,13 @@ video {
   font-family: HelveticaNowText-Regular;
 }
 
+<<<<<<< HEAD
 .font-HelveticaNowText_Regular {
   font-family: HelveticaNowText-Regular;
 }
 
+=======
+>>>>>>> d341181 (add: Develop image-card 100%)
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -995,6 +1001,22 @@ video {
   line-height: 2rem;
 }
 
+<<<<<<< HEAD
+=======
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+>>>>>>> d341181 (add: Develop image-card 100%)
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -1019,10 +1041,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
 }
 
 .font-black {
@@ -1176,6 +1194,12 @@ h1 {
 @media (min-width: 601px) {
   .min-\[601px\]\:hidden {
     display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
   }
 }
 
