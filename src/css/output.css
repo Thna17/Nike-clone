@@ -1082,3 +1082,15 @@ h1 {
     text-align: center;
   }
 }
+
+@media (min-width: 960px) {
+  .min-\[960px\]\:text-\[56px\] {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 961px) {
+  .min-\[961px\]\:left-10 {
+    left: 2.5rem;
+  }
+}
