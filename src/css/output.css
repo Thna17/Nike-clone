@@ -381,7 +381,7 @@ textarea {
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
-  color: #707072;
+  color: #9ca3af;
   /* 2 */
 }
 
@@ -389,7 +389,7 @@ input::placeholder,
 textarea::placeholder {
   opacity: 1;
   /* 1 */
-  color: #707072;
+  color: #9ca3af;
   /* 2 */
 }
 
@@ -637,6 +637,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-2\.5 {
+  margin-bottom: 0.625rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -659,14 +663,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-.mb-2\.5 {
-  margin-bottom: 0.625rem;
 }
 
 .inline-block {
@@ -753,10 +749,6 @@ video {
   flex-wrap: wrap;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -807,22 +799,6 @@ video {
 
 .gap-\[10px\] {
   gap: 10px;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.self-center {
-  align-self: center;
-}
-
-.self-stretch {
-  align-self: stretch;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
 }
 
 .overflow-x-scroll {
@@ -945,14 +921,6 @@ video {
   padding-bottom: 8px;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -982,16 +950,6 @@ video {
   line-height: 2rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -1012,10 +970,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
 }
 
 .font-black {
@@ -1050,7 +1004,7 @@ video {
 
 .text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(112 112 114 / var(--tw-text-opacity));
 }
 
 .text-\[\#111111\] {
@@ -1107,32 +1061,6 @@ h1 {
   h1 {
     font-size: 36px;
   }
-
-  .max-\[960px\]\:hidden {
-    display: none;
-  }
-
-  .max-\[960px\]\:p-teblet {
-    padding: 0 14px 0 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .max-\[600px\]\:hidden {
-    display: none;
-  }
-
-  .max-\[600px\]\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
-  .max-\[600px\]\:flex-col {
-    flex-direction: column;
-  }
-
-  .max-\[600px\]\:text-left {
-    text-align: left;
-  }
 }
 
 @media (min-width: 600px) {
@@ -1147,38 +1075,10 @@ h1 {
   .mob\:justify-end {
     justify-content: flex-end;
   }
-
-  .min-\[600px\]\:hidden {
-    display: none;
-  }
-
-  .min-\[600px\]\:flex-col {
-    flex-direction: column;
-  }
-
-  .min-\[600px\]\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  .min-\[600px\]\:justify-end {
-    justify-content: flex-end;
-  }
 }
 
 @media (min-width: 640px) {
   .sm\:text-center {
     text-align: center;
-  }
-}
-
-@media (min-width: 960px) {
-  .min-\[960px\]\:text-\[56px\] {
-    font-size: 56px;
-  }
-}
-
-@media (min-width: 961px) {
-  .min-\[961px\]\:left-10 {
-    left: 2.5rem;
   }
 }
