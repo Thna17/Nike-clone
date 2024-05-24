@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Navbar Example</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="./src/css/output.css">
     <script src="./src/components/navbar.js" defer></script>
+	<script src="./src/components/hero.js"></script>
 </head>
 <body>
     <!-- Use the custom navbar component -->
     <custom-navbar></custom-navbar>
+    <div class="w-screen">
+        <hero-component
+		img-url-bg="/assets/images/image-homepage/layout1-homepage.webp"
+		img-url-sm="/assets/images/image-homepage/layout1-sm-homepage.webp"
+		heading="PLAY AT YOUR PEAK"
+		paragraph="From 5.20–5.24, shop fresh kicks, adventure essentials, and the best of <br> summer style—with exclusive rewards for Nike Members."
+	    ></hero-component>
+    </div>
 
-    <!-- Include the JavaScript file -->
+
 </body>
 </html>
