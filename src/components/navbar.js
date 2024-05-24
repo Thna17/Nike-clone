@@ -5,8 +5,8 @@ class Navbar extends HTMLElement {
     }
 
     connectedCallback() {
+        this.setAttribute('class', 'w-screen HelveticaNowText-Medium font-black')
         this.innerHTML = `
-            <header class="w-screen HelveticaNowText-Medium font-black">
                 <!-- First navigation bar -->
                 <nav class="h-9 p-desktop flex justify-between items-center max-[960px]:hidden">
                     <div class="w-auto h-auto inline-block">
@@ -67,7 +67,7 @@ class Navbar extends HTMLElement {
                     </button>
                         </div>
                     </nav>
-            </header>
+  
         `;
     }
 }
