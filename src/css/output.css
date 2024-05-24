@@ -915,9 +915,15 @@ body {
   }
 }
 
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
+  }
+}
+
 @media (min-width: 960px) {
-  .min-\[960px\]\:text-\[56px\] {
-    font-size: 56px;
+  .min-\[960px\]\:text-\[65px\] {
+    font-size: 65px;
   }
 }
 
