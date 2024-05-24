@@ -628,11 +628,6 @@ video {
   z-index: 10;
 }
 
-.mx-\[24px\] {
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -843,14 +838,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[10px\] {
-  gap: 10px;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
 .text-wrap {
   text-wrap: wrap;
 }
@@ -967,11 +954,6 @@ video {
   padding-right: 1.25rem;
 }
 
-.px-\[16px\] {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 >>>>>>> 972859f (add: develop hero component)
 .px-\[20px\] {
   padding-left: 20px;
@@ -993,6 +975,19 @@ video {
   padding-bottom: 0.375rem;
 }
 
+<<<<<<< HEAD
+=======
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-\[6px\] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+>>>>>>> 972859f (add: develop hero component)
 .py-\[7px\] {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -1009,10 +1004,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-Futura {
@@ -1043,18 +1034,6 @@ video {
 .text-\[16px\] {
   font-size: 16px;
 >>>>>>> 972859f (add: develop hero component)
-}
-
-.text-\[18px\] {
-  font-size: 18px;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
-}
-
-.text-\[36px\] {
-  font-size: 36px;
 }
 
 .text-\[75px\] {
@@ -1185,8 +1164,6 @@ h1 {
   font-family: Futura;
 }
 
-<<<<<<< HEAD
-=======
 h1 {
   font-family: Futura;
 }
@@ -1230,11 +1207,30 @@ h1 {
 
   .max-\[600px\]\:text-left {
     text-align: left;
->>>>>>> 972859f (add: develop hero component)
   }
 }
 
 @media (min-width: 600px) {
+  .mob\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .mob\:flex {
+    display: flex;
+  }
+
+  .mob\:flex-row {
+    flex-direction: row;
+  }
+
+  .mob\:items-end {
+    align-items: flex-end;
+  }
+
+  .mob\:justify-end {
+    justify-content: flex-end;
+  }
+
   .min-\[600px\]\:hidden {
     display: none;
   }
@@ -1259,13 +1255,10 @@ h1 {
 @media (min-width: 960px) {
   .min-\[960px\]\:text-\[56px\] {
     font-size: 56px;
-<<<<<<< HEAD
-=======
   }
 
   .min-\[960px\]\:text-\[65px\] {
     font-size: 65px;
->>>>>>> 972859f (add: develop hero component)
   }
 }
 
