@@ -3,9 +3,15 @@
 @tailwind utilities;
 body {
     font-family: HelveticaNowText-Medium;
+    overflow-x: hidden;
 }
 @media (min-width:961px) {
     #hidden {
         display: none;
+    }
+}
+@media (max-width: 960px) {
+    #image {
+        object-fit: cover;
     }
 }
