@@ -1172,31 +1172,7 @@ h1 {
   }
 }
 
-@media (min-width: 640px) {
-  .sm\:flex-row {
-    flex-direction: row;
-  }
-
-  .sm\:text-center {
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:w-\[calc\(33\.33\%-10px\)\] {
-    width: calc(33.33% - 10px);
-  }
-}
-
 @media (min-width: 960px) {
-  .tab\:min-w-\[450px\] {
-    min-width: 450px;
-  }
-
-  .tab\:min-w-\[500px\] {
-    min-width: 500px;
-  }
-
   .min-\[960px\]\:text-\[56px\] {
     font-size: 56px;
   }
