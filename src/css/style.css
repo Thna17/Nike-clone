@@ -29,12 +29,7 @@ body {
 h1 {
     font-family: Futura;
 }
-<<<<<<< HEAD
-=======
-h1 {
-    font-family: Futura;
-}
->>>>>>> bc4257e (Add: Develop layout1-3)
+
 @media (max-width: 960px) {
     #image {
         object-fit: cover;
