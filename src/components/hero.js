@@ -11,7 +11,7 @@ class Hero extends HTMLElement {
         const button = this.getAttribute('button') || '';
         this.setAttribute('class', 'flex justify-center w-full')
         this.innerHTML = `
-     
+           
                 <a href="" class=" w-full ">
                     <div class="w-full">
                         <img src="${imgUrlBg}" alt="" class="h-full w-full max-[600px]:hidden">
