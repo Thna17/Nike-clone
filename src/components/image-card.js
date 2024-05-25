@@ -3,8 +3,8 @@ class imageCard extends HTMLElement {
         super();
     }
     connectedCallback() {
-        const imgUrl = this.getAttribute('img-url-bg');
-        const paragraph = this.getAttribute('paragraph');
+        const imgUrl = this.getAttribute('img-url');
+        const paragraph = this.getAttribute('paragraph') || '';
         const heading = this.getAttribute('heading') || '';
         const button = this.getAttribute('button') || 'Shop';
 
@@ -14,7 +14,7 @@ class imageCard extends HTMLElement {
             <div class="absolute bottom-12 left-12 text-white tracking-wide font-sans">
                 <p class="text-lg mb-2">${paragraph}</p>
                 <h3 class="text-2xl font-medium">${heading}</h3>
-                <div class="inline-block bg-white rounded-xl font-semibold py-1.5 px-4 text-black mt-6">${button}</div>
+                <div class="inline-block bg-white rounded-[20px] font-semibold py-1.5 px-4 text-black mt-6">${button}</div>
             </div>
         `;
     }
