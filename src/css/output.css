@@ -583,6 +583,11 @@ video {
   margin-right: 24px;
 }
 
+.mx-\[48px\] {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -649,6 +654,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[1920px\] {
+  width: 1920px;
 }
 
 .items-center {
