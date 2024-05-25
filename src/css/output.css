@@ -750,14 +750,6 @@ video {
   width: 1440px;
 }
 
-.w-\[1440px\] {
-  width: 1440px;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .w-\[80\%\] {
   width: 80%;
 }
@@ -1204,6 +1196,10 @@ h1 {
 
   .min-\[600px\]\:hidden {
     display: none;
+  }
+
+  .min-\[600px\]\:flex-col {
+    flex-direction: column;
   }
 
   .min-\[600px\]\:flex-col {
