@@ -750,14 +750,6 @@ video {
   width: 1440px;
 }
 
-.w-\[1440px\] {
-  width: 1440px;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .w-\[80\%\] {
   width: 80%;
 }
@@ -1194,6 +1186,10 @@ h1 {
 
   .tab\:max-h-\[500px\] {
     max-height: 500px;
+  }
+
+  .min-\[600px\]\:flex-col {
+    flex-direction: column;
   }
 
   .min-\[600px\]\:flex-col {
