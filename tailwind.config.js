@@ -44,8 +44,9 @@ module.exports = {
         '15' : '60px'
       },
       screens: {
-        tab: '960px',
-        mob: '600px'
+        tab: '1024px',
+        mob: '600px',
+        dsk: '1920px'
       },
       fontFamily: {
         Futura: 'Futura',

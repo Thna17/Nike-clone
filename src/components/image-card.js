@@ -10,7 +10,7 @@ class imageCard extends HTMLElement {
 
         this.setAttribute('class', 'w-full relative');
         this.innerHTML = `
-            <img src="${imgUrl}" alt="" class="w-full h-full" id="image1">
+            <img src="${imgUrl}" alt="" class="w-full h-full object-cover" id="image1">
             <div class="absolute bottom-12 left-12 text-white tracking-wide font-sans">
                 <p class="text-lg mb-2">${paragraph}</p>
                 <h3 class="text-2xl font-medium">${heading}</h3>
