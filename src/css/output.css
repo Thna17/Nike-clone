@@ -700,6 +700,10 @@ video {
   width: 1440px;
 }
 
+.w-\[1920px\] {
+  width: 1920px;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
@@ -734,10 +738,6 @@ video {
 
 .max-w-\[610px\] {
   max-width: 610px;
-}
-
-.max-w-\[1920px\] {
-  max-width: 1920px;
 }
 
 .flex-shrink-0 {
@@ -961,6 +961,10 @@ video {
 
 .font-Futura {
   font-family: Futura;
+}
+
+.font-HelveticaNowText_Regular {
+  font-family: HelveticaNowText-Regular;
 }
 
 .text-2xl {
