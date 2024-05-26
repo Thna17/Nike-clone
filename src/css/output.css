@@ -656,6 +656,10 @@ video {
   margin-top: 48px;
 }
 
+.mt-\[84px\] {
+  margin-top: 84px;
+}
+
 .block {
   display: block;
 }
@@ -782,6 +786,10 @@ video {
 
 .overflow-x-auto {
   overflow-x: auto;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .text-wrap {
@@ -1142,6 +1150,14 @@ h1 {
 }
 
 @media (min-width: 960px) {
+  .tab\:min-w-\[450px\] {
+    min-width: 450px;
+  }
+
+  .tab\:min-w-\[500px\] {
+    min-width: 500px;
+  }
+
   .min-\[960px\]\:text-\[56px\] {
     font-size: 56px;
   }
