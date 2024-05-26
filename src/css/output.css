@@ -652,6 +652,10 @@ video {
   margin-right: 0.25rem;
 }
 
+.mt-\[84px\] {
+  margin-top: 84px;
+}
+
 .block {
   display: block;
 }
@@ -1170,6 +1174,10 @@ h1 {
 }
 
 @media (min-width: 960px) {
+  .min-\[960px\]\:text-\[56px\] {
+    font-size: 56px;
+  }
+
   .min-\[960px\]\:text-\[65px\] {
     font-size: 65px;
   }
