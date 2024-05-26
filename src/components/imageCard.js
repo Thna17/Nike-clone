@@ -3,12 +3,12 @@ class imageCard extends HTMLElement {
         super();
     }
     connectedCallback() {
-        const imgUrl = this.getAttribute('img-url');
+        const imgUrl = this.getAttribute('img-url-bg');
         const paragraph = this.getAttribute('paragraph') || '';
         const heading = this.getAttribute('heading') || '';
         const button = this.getAttribute('button') || 'Shop';
 
-        this.setAttribute('class', 'w-full relative');
+        this.setAttribute('class', 'w-full h-full relative');
         this.innerHTML = `
             <img src="${imgUrl}" alt="" class="w-full h-full object-cover" id="image1">
             <div class="absolute bottom-12 left-12 text-white tracking-wide font-sans">
