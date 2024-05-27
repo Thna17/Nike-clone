@@ -6,23 +6,42 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="./src/css/output.css">
     <script src="./src/components/navbar.js" defer></script>
-	<script src="./src/components/hero.js"></script>
+	<script src="/src/components/hero.js" defer></script>
+    <script src="./src/components/image-card.js" defer></script>
 </head>
 <body>
+    <component-navbar></component-navbar>
 
+	<hero-component
+        img-url-bg="/assets/images/image-homepage/layout1-homepage.webp"
+        img-url-sm="/assets/images/image-homepage/layout1-sm-homepage.webp"
+        heading="PLAY AT YOUR PEAK"
+        paragraph="From 5.20–5.24, shop fresh kicks, adventure essentials, and the best of <br> summer style—with exclusive rewards for Nike Members."
+        button="Shop summer Event"
+    ></hero-component>
 
-    <div>
-        <a href="" class="block  w-full">
-          <div class="relative flex justify-center items-center">
-            <img src="./assets/images/image-homepage/layout1-homepage.webp" alt="" class="h-full w-full">
-          </div>
-          <div class="relative w-full text-center mt-[24px]">
-            <h1 class="text-black text-[75px] font-bold">PLAY AT YOUR PEAK</h1>
-            <p class="text-[#111111] text-[16px] font-arial font-normal mt-[12px] ">From 5.20–5.24, shop fresh kicks, adventure essentials, and the best of <br> summer style—with exclusive rewards for Nike Members.</p>
-            <div class="inline-block bg-black rounded-[20px] py-[7px] px-[20px] text-white font-medium mt-4 mb-4">Shop Summer Event</div>
-          </div>
-        </a>
-      </div>
+    <div class="grid w-screen grid-cols-2 max-[600px]:grid-cols-1">
+        <image-card
+            img-url-bg="./assets/images/image-homepage/layout2-img1-homepage.webp"
+            paragraph="Made for You. From Naomi."
+            heading="Own Your Moment"
+        ></image-card>
+        <image-card
+            img-url-bg="./assets/images/image-homepage/layout2-img2-homepage.webp"
+            paragraph="Father's Day Gifts"
+            heading="Dad-Worthy Kicks & More"
+        ></image-card>
+        <image-card
+            img-url-bg="./assets/images/image-homepage/layout2-img3-homepage.webp"
+            paragraph="Saquon Barkley's Picks"
+            heading="Air Max, Football Cleats & More"
+        ></image-card>
+        <image-card
+            img-url-bg="./assets/images/image-homepage/layout2-img4-homepage.webp"
+            paragraph="Tame the Terrain"
+            heading="Nike Zegama 2"
+        ></image-card>
+    </div>
 
       <div class="grid w-screen grid-cols-2 max-[600px]:grid-cols-1">
         <div class="w-full object-cover h-[500px]">
