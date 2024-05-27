@@ -1,5 +1,5 @@
 REVIEWBOARD_URL = "https://review.clp.kr/"
-REPOSITORY = "CyberNexus/Hong-Than-Brathana/Nike-clone"
+REPOSITORY = "CyberNexus/Hong-Than-Brathana/Nike-Clone"
 REPOSITORY_TYPE = "git"
 BRANCH = "feature/homepage"
 LAND_DEST_BRANCH = "feature/homepage"
