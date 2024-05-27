@@ -756,6 +756,10 @@ video {
   min-width: 400px;
 }
 
+.min-w-\[500px\] {
+  min-width: 500px;
+}
+
 .max-w-\[1920px\] {
   max-width: 1920px;
 }
@@ -810,6 +814,10 @@ video {
 
 .gap-\[10px\] {
   gap: 10px;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .overflow-x-scroll {
