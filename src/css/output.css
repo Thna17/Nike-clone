@@ -633,6 +633,11 @@ video {
   margin-right: 48px;
 }
 
+.mx-\[24px\] {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -849,6 +854,10 @@ video {
   overflow-x: scroll;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .text-nowrap {
   text-wrap: nowrap;
 }
@@ -1006,6 +1015,10 @@ video {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.font-Futura {
+  font-family: Futura;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1049,6 +1062,14 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
 }
 
 .font-black {
@@ -1167,6 +1188,10 @@ h1 {
   .max-\[600px\]\:flex-col {
     flex-direction: column;
   }
+
+  .max-\[600px\]\:text-left {
+    text-align: left;
+  }
 }
 
 @media (min-width: 600px) {
@@ -1190,6 +1215,10 @@ h1 {
     justify-content: flex-end;
   }
 
+  .min-\[600px\]\:hidden {
+    display: none;
+  }
+
   .min-\[600px\]\:flex-col {
     flex-direction: column;
   }
@@ -1198,6 +1227,12 @@ h1 {
 @media (min-width: 601px) {
   .min-\[601px\]\:hidden {
     display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
   }
 }
 
@@ -1214,6 +1249,10 @@ h1 {
 
   .tab\:min-w-\[500px\] {
     min-width: 500px;
+  }
+
+  .min-\[960px\]\:text-\[56px\] {
+    font-size: 56px;
   }
 }
 
