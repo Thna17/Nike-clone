@@ -4,8 +4,8 @@ class FooterComponent extends HTMLElement {
     }
     
     connectedCallback() {
+        this.setAttribute('class', 'flex justify-center bg-[#111111] font-HelveticaNowText_Regularl')
         this.innerHTML = `
-        <div class="flex justify-center bg-[#111111] font-HelveticaNowText_Regular">
         <div class="w-[1440px] p-[40px] pt-10">
           <div class="flex justify-between flex-col mob:flex-row mb-4">
             <div class=" flex justify-between w-[80%] flex-wrap flex-col mob:flex-row gap-[10px]">
@@ -80,7 +80,6 @@ class FooterComponent extends HTMLElement {
               </ul>
             </div>
           </div>
-        </div>
       </div>
         `;
     }
