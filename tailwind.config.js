@@ -34,15 +34,17 @@ module.exports = {
         'nike-text-orange-red': '#9E3500',
       },
       padding: {
-        'desktop' : '0 38px 0 36px',
-        'teblet' : '0 14px 0 16px'
+        'desktop': '0 38px 0 36px',
+        'tablet': '0 14px 0 16px' // Corrected typo
+      },
+      screens: {
+        'tablet' : '960px'
       },
       screens: {
         'tablet' : '960px'
       },
       height: {
         '15' : '60px'
-      }
     },
     screens: {
       tab: '960px',
