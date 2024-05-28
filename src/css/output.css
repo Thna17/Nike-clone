@@ -570,6 +570,10 @@ video {
   left: 3rem;
 }
 
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -622,6 +626,18 @@ video {
 
 .mt-\[84px\] {
   margin-top: 84px;
+}
+
+.mb-2\.5 {
+  margin-bottom: 0.625rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .block {
@@ -684,6 +700,14 @@ video {
   width: 100vw;
 }
 
+.w-\[1440px\] {
+  width: 1440px;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .min-w-\[300px\] {
   min-width: 300px;
 }
@@ -692,8 +716,16 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -775,6 +807,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#111111\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+}
+
 .fill-none {
   fill: none;
 }
@@ -795,6 +832,10 @@ video {
 
 .p-desktop {
   padding: 0 38px 0 36px;
+}
+
+.p-\[40px\] {
+  padding: 40px;
 }
 
 .px-2 {
@@ -862,12 +903,20 @@ video {
   padding-bottom: 8px;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .font-Futura {
   font-family: Futura;
+}
+
+.font-HelveticaNowText_Regular {
+  font-family: HelveticaNowText-Regular;
 }
 
 .text-2xl {
@@ -910,6 +959,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -947,6 +1000,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .outline-none {
@@ -1012,8 +1070,32 @@ h1 {
 }
 
 @media (min-width: 600px) {
+  .mob\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .mob\:flex {
+    display: flex;
+  }
+
+  .mob\:flex-row {
+    flex-direction: row;
+  }
+
+  .mob\:items-end {
+    align-items: flex-end;
+  }
+
+  .mob\:justify-end {
+    justify-content: flex-end;
+  }
+
   .min-\[600px\]\:hidden {
     display: none;
+  }
+
+  .min-\[600px\]\:flex-col {
+    flex-direction: column;
   }
 }
 
