@@ -24,9 +24,8 @@ body {
 
 h1 {
     font-family: Futura;
-    
 }
-
+>>>>>>> bc4257e (Add: Develop layout1-3)
 @media (max-width: 960px) {
     #image {
         object-fit: cover;
@@ -35,5 +34,8 @@ h1 {
         font-size: 36px;
     }
   
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3619ba8 (Add: develop Homepage 70%)
 }

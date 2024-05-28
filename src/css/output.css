@@ -381,7 +381,7 @@ textarea {
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
-  color: #9ca3af;
+  color: #707072;
   /* 2 */
 }
 
@@ -389,7 +389,7 @@ input::placeholder,
 textarea::placeholder {
   opacity: 1;
   /* 1 */
-  color: #9ca3af;
+  color: #707072;
   /* 2 */
 }
 
@@ -628,14 +628,14 @@ video {
   z-index: 10;
 }
 
-.mx-\[48px\] {
-  margin-left: 48px;
-  margin-right: 48px;
-}
-
 .mx-\[24px\] {
   margin-left: 24px;
   margin-right: 24px;
+}
+
+.mx-\[48px\] {
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 .mb-2 {
@@ -678,10 +678,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-\[12px\] {
   margin-top: 12px;
 }
@@ -694,16 +690,8 @@ video {
   margin-top: 24px;
 }
 
-.mt-\[48px\] {
-  margin-top: 48px;
-}
-
 .mt-\[84px\] {
   margin-top: 84px;
-}
-
-.block {
-  display: block;
 }
 
 .inline-block {
@@ -728,10 +716,6 @@ video {
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-\[500px\] {
-  height: 500px;
 }
 
 .h-auto {
@@ -846,12 +830,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[10px\] {
-  gap: 10px;
-}
-
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
 }
 
 .overflow-x-auto {
@@ -876,10 +860,6 @@ video {
 
 .rounded-\[20px\] {
   border-radius: 20px;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .border-2 {
@@ -922,16 +902,6 @@ video {
   fill: none;
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-left {
-  -o-object-position: left;
-     object-position: left;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -959,11 +929,6 @@ video {
   padding-right: 1rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .px-\[20px\] {
   padding-left: 20px;
   padding-right: 20px;
@@ -982,11 +947,6 @@ video {
 .py-1\.5 {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .py-\[7px\] {
@@ -1015,6 +975,10 @@ video {
   text-align: center;
 }
 
+.font-Futura {
+  font-family: Futura;
+}
+
 .font-HelveticaNowText_Regular {
   font-family: HelveticaNowText-Regular;
 }
@@ -1023,26 +987,17 @@ video {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.font-Futura {
-  font-family: Futura;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-\[12px\] {
   font-size: 12px;
 }
 
-.text-\[16px\] {
-  font-size: 16px;
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .text-\[20px\] {
@@ -1053,8 +1008,8 @@ video {
   font-size: 24px;
 }
 
-.text-\[75px\] {
-  font-size: 75px;
+.text-\[36px\] {
+  font-size: 36px;
 }
 
 .text-lg {
@@ -1072,14 +1027,6 @@ video {
   line-height: 1rem;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
-}
-
-.text-\[36px\] {
-  font-size: 36px;
-}
-
 .font-black {
   font-weight: 900;
 }
@@ -1090,10 +1037,6 @@ video {
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-normal {
-  font-weight: 400;
 }
 
 .font-semibold {
@@ -1116,7 +1059,7 @@ video {
 
 .text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: rgb(112 112 114 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -1165,16 +1108,18 @@ h1 {
   font-family: Futura;
 }
 
+>>>>>>> bc4257e (Add: Develop layout1-3)
 @media (max-width: 960px) {
   #image {
     -o-object-fit: cover;
        object-fit: cover;
   }
-
   h1 {
     font-size: 36px;
   }
+}
 
+@media (max-width: 960px) {
   .max-\[960px\]\:hidden {
     display: none;
   }
@@ -1225,12 +1170,6 @@ h1 {
 
   .min-\[600px\]\:flex-col {
     flex-direction: column;
-  }
-}
-
-@media (min-width: 601px) {
-  .min-\[601px\]\:hidden {
-    display: none;
   }
 }
 
