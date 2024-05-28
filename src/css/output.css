@@ -1120,6 +1120,10 @@ h1 {
        object-fit: cover;
   }
 
+  h1 {
+    font-size: 36px;
+  }
+
   .max-\[960px\]\:hidden {
     display: none;
   }
