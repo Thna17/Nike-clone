@@ -8,12 +8,16 @@
     <script src="./src/components/navbar.js" defer></script>
 	<script src="/src/components/hero.js" defer></script>
     <script src="./src/components/image-card.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/src/js/script.js"></script>
+
 </head>
 <body>
     <component-navbar></component-navbar>
 
 	<hero-component
-        img-url-bg="/assets/images/image-homepage/layout1-homepage.webp"
+        img-url-bg="./assets/images/image-homepage/layout1-homepage.webp"
         img-url-sm="/assets/images/image-homepage/layout1-sm-homepage.webp"
         heading="PLAY AT YOUR PEAK"
         paragraph="From 5.20–5.24, shop fresh kicks, adventure essentials, and the best of <br> summer style—with exclusive rewards for Nike Members."
@@ -43,33 +47,53 @@
         ></image-card>
     </div>
 
-      <div class="grid w-screen grid-cols-2 max-[600px]:grid-cols-1">
-        <div class="w-full object-cover h-[500px]">
-            <img src="./assets/images/image-homepage/layout2-img1-homepage.webp" alt="" class="w-full  h-full" id="image">
-        </div>
-        <div class="w-full object-cover h-[500px]">
-            <img src="./assets/images/image-homepage/layout2-img2-homepage.webp" alt="" class="w-full  h-full " id="image">
-        </div>
-        <div class="w-full h-[500px] object-cover">
-            <img src="./assets/images/image-homepage/layout2-img3-homepage.webp" alt="" class="w-full   h-full" id="image">
-        </div>
-        <div class="w-full h-[500px] object-cover object-left">
-            <img src="./assets/images/image-homepage/layout2-img4-homepage.webp" alt="" class="w-full  h-full object-left" id="image">
-        </div>
+    <div class="flex w-screen overflow-x-auto gap-[10px]">
+      <div class="min-w-[300px] max-w-[700px]">
+        <img src="/assets/images/image-homepage/layout4-img1-homepage.webp" alt="" class="w-full">
       </div>
-      
-      <div class="flex flex-col items-center">
-        <div class="w-full text-center mt-8">
-          <h1 class="text-4xl font-bold">NEW THIS WEEK</h1>
-        </div>
-        <div class="mt-4">
-          <div class="inline-block bg-black text-white  rounded-full py-2 px-5">Shop Now Arrivals</div>
-        </div>
+      <div class="min-w-[300px] max-w-[700px]">
+        <img src="/assets/images/image-homepage/layout4-img2-homepage.webp" alt="" class="w-full">
       </div>
+      <div class="min-w-[300px] max-w-[700px]">
+        <img src="/assets/images/image-homepage/layout4-img3-homepage.webp" alt="" class="w-full">
+      </div>
+      <div class="min-w-[300px] max-w-[700px]">
+        <img src="/assets/images/image-homepage/layout4-img4-homepage.webp" alt="" class="w-full">
+      </div>
+      <div class="min-w-[300px] max-w-[700px]">
+        <img src="/assets/images/image-homepage/layout4-img5-homepage.webp" alt="" class="w-full">
+      </div>
+    </div>
 
-      <div class="mt-[48px]" >
-        <img src=".//assets/images/image-homepage/layout3-homepage.webp" alt="" class="max-[600px]:hidden">
-        <img src="./assets/images/image-homepage/layput3-sm-homepage.webp" alt="" class="min-[601px]:hidden">
-      </div>
+    <div class="flex justify-center">
+        <div class="flex w-[1920px] overflow-x-scroll gap-1">
+            <div class="min-w-[500px] max-w-screen-2xl">
+                <image-card
+                img-url-bg="./assets/images/image-homepage/layout5-img1-homepage.webp"
+                paragraph="Members Product"
+                heading="Your Excluesive"
+                ></image-card>
+            </div>
+            <div class="min-w-[500px] max-w-screen-2xl">
+                <image-card
+                img-url-bg="./assets/images/image-homepage/layout5-img2-homepage.webp"
+                paragraph="Sports & Wellness Apps"
+                heading="Movement Where You're At"
+                button="Move"
+                ></image-card>
+            </div>
+            <div class="min-w-[500px] max-w-screen-2xl">
+                <image-card
+                img-url-bg="./assets/images/image-homepage/layout5-img3-homepage.webp"
+                paragraph="Nike By You"
+                heading="Your Customization Service"
+                button="Customize"
+                ></image-card>
+            </div>
+        </div>
+ 
+
+    </div>
+
 </body>
 </html>
