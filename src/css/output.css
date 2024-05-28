@@ -620,6 +620,10 @@ video {
   left: 3rem;
 }
 
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -675,6 +679,18 @@ video {
 
 .mt-\[48px\] {
   margin-top: 48px;
+}
+
+.mb-2\.5 {
+  margin-bottom: 0.625rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .block {
@@ -745,6 +761,14 @@ video {
   width: 100vw;
 }
 
+.w-\[1440px\] {
+  width: 1440px;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
 <<<<<<< HEAD
 .min-w-\[500px\] {
   min-width: 500px;
@@ -760,6 +784,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 <<<<<<< HEAD
 .flex-row {
   flex-direction: row;
@@ -769,6 +797,10 @@ video {
 >>>>>>> 972859f (add: develop hero component)
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 <<<<<<< HEAD
@@ -796,18 +828,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-\[10px\] {
-  gap: 10px;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
 }
 
 .text-wrap {
@@ -870,6 +890,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#111111\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+}
+
 .fill-none {
   fill: none;
 }
@@ -894,6 +919,10 @@ video {
 
 .p-desktop {
   padding: 0 38px 0 36px;
+}
+
+.p-\[40px\] {
+  padding: 40px;
 }
 
 .px-2 {
@@ -979,14 +1008,6 @@ video {
   font-family: Futura;
 }
 
-.font-HelveticaNowText_Regular {
-  font-family: HelveticaNowText-Regular;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1032,6 +1053,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1074,6 +1099,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .outline-none {
@@ -1158,16 +1188,8 @@ h1 {
 }
 
 @media (min-width: 600px) {
-  .mob\:flex-row {
-    flex-direction: row;
-  }
-
-  .mob\:items-end {
-    align-items: flex-end;
-  }
-
-  .mob\:justify-end {
-    justify-content: flex-end;
+  .min-\[600px\]\:hidden {
+    display: none;
   }
 }
 
