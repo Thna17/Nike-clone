@@ -1229,10 +1229,6 @@ h1 {
   .md\:w-\[calc\(33\.33\%-10px\)\] {
     width: calc(33.33% - 10px);
   }
-
-  .tab\:min-h-\[400px\] {
-    min-height: 400px;
-  }
 }
 
 @media (min-width: 960px) {
