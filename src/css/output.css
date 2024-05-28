@@ -656,6 +656,10 @@ video {
   margin-top: 48px;
 }
 
+.mt-\[84px\] {
+  margin-top: 84px;
+}
+
 .block {
   display: block;
 }
@@ -698,6 +702,10 @@ video {
 
 .w-\[1440px\] {
   width: 1440px;
+}
+
+.w-\[1920px\] {
+  width: 1920px;
 }
 
 .w-\[80\%\] {
@@ -1046,6 +1054,26 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@font-face {
+  font-family: Futura;
+
+  src: url(../assets/fonts/Futura\ Condensed\ Extra\ Bold.otf);
+}
+
+@font-face {
+  font-family: HelveticaNowText-Medium;
+
+  src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
+
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: HelveticaNowText-Regular ;
+
+  src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
 }
 
 body {
