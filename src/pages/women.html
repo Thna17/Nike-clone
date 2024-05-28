@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women</title>
     <link rel="stylesheet" href="../css/output.css">
-    <script src="/src/components/navbar.js"></script>
-    <script src="/src/components/hero.js"></script>
-    <script src="/src/components/image-card.js" defer></script>
-   <script src="/src/components/imageSlider.js"></script>
+    <script src="/src/components/footer.js" defer></script>
+    <script src="/src/components/hero.js" defer></script>
+    <script src="/src/components/imageCard.js" defer></script>
+    <script src="/src/components/imageSlider1.js" defer></script>
+    <script src="/src/components/navbar.js" defer></script>
 
 
 </head>
@@ -19,8 +20,8 @@
     <div class="flex justify-center">
        <div class="w-[1920px] mx-[48px]">
         <hero-component
-            img-url-bg="/assets/images/women-page/layout1-img1-women.webp"
-            img-url-sm="/assets/images/women-page/layout1-img2-women.webp"
+            img-url-bg="/assets/images/image-women/layout1-img1-women.webp"
+            img-url-sm="/assets/images/image-women/layout1-img2-women.webp"
             heading="FEEL SCULPTED "
             paragraph="Made for all your water-based adventures."
             button="Shop"
@@ -31,23 +32,30 @@
     <div class="flex justify-center">
         <div class="w-[1920px] flex gap-[10px] mx-[48px] max-[600px]:flex-col  ">
             <image-card
-                img-url-bg="/assets/images/women-page/layout3-img1-women.webp"
+                img-url-bg="/assets/images/image-women/layout3-img1-women.webp"
                 paragraph="Just In"
                 heading="Air Max Dn"
             ></image-card>
             <image-card
-                img-url-bg="/assets/images/women-page/layout3-img2-women.webp"
+                img-url-bg="/assets/images/image-women/layout3-img2-women.webp"
                 paragraph="Make Your Move"
                 heading="New Fitness Essentials"
             ></image-card>
         </div>
     </div>
+    <image-slider images='[
+        "/assets/images/image-women/layout4-img1-women.webp",
+        "/assets/images/image-women/layout4-img2-women.webp",
+        "/assets/images/image-women/layout4-img3-women.webp",
+        "/assets/images/image-women/layout4-img4-women.webp",
+        "/assets/images/image-women/layout4-img5-women.webp"
+    ]'></image-slider>
 
     <div class="flex  justify-center mt-[84px]">
         <div class="w-[1920px] flex overflow-x-scroll gap-[10px] mx-[48px]">
             <div class=" min-w-[300px] tab:min-w-[500px] dsk:min-w-[600px]">
                 <image-card
-                img-url-bg="/assets/images/women-page/layout7-img1-women.webp"
+                img-url-bg="/assets/images/image-women/layout7-img1-women.webp"
                 paragraph="Members Product"
                 heading="Your Excluesive Access"
             ></image-card>
@@ -55,7 +63,7 @@
 
             <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px] ">
                 <image-card
-                img-url-bg="/assets/images/women-page/layout7-img2-women.webp"
+                img-url-bg="/assets/images/image-women/layout7-img2-women.webp"
                 paragraph="Member rewards"
                 heading="How We Say Thank You"
                 button="Celebrate"
@@ -64,7 +72,7 @@
 
             <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px] ">
                 <image-card
-                img-url-bg="/assets/images/women-page/layout7-img3-women.webp"
+                img-url-bg="/assets/images/image-women/layout7-img3-women.webp"
                 paragraph="Sports & Wellness Apps"
                 heading="Movement Where You're At"
                 button="Move"
@@ -74,7 +82,7 @@
           
             <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px]">
                 <image-card
-                img-url-bg="/assets/images/women-page/layout7-img4-women.webp"
+                img-url-bg="/assets/images/image-women/layout7-img4-women.webp"
                 paragraph="Nike By You"
                 heading="Your Customization Service"
                 button="Customize"
@@ -83,7 +91,7 @@
 
             <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px]">
                 <image-card
-                img-url-bg="/assets/images/women-page/layout7-img5-women.webp"
+                img-url-bg="/assets/images/image-women/layout7-img5-women.webp"
                 paragraph="Nike By You"
                 heading="Your Ultimate <br> Sneaker Community"
                 button="Explore"
@@ -92,12 +100,14 @@
 
             <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px]">
                 <image-card
-                img-url-bg="/assets/images/women-page/layout7-img6-women.webp"
+                img-url-bg="/assets/images/image-women/layout7-img6-women.webp"
                 paragraph="Member Interests"
                 heading="Shop Your Way"
                 button="Add Interests"
             ></image-card>
             </div>
         </div>
+    </div>
+    <footer-component></footer-component>
 </body>
 </html>
