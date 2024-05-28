@@ -1208,6 +1208,10 @@ h1 {
 }
 
 @media (min-width: 640px) {
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
