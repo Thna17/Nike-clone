@@ -620,10 +620,6 @@ video {
   left: 3rem;
 }
 
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -677,18 +673,6 @@ video {
   margin-top: 48px;
 }
 
-.mb-2\.5 {
-  margin-bottom: 0.625rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
 .block {
   display: block;
 }
@@ -729,8 +713,16 @@ video {
   height: 100%;
 }
 
+.w-\[1440px\] {
+  width: 1440px;
+}
+
 .w-\[1920px\] {
   width: 1920px;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[84px\] {
@@ -749,12 +741,12 @@ video {
   width: 100vw;
 }
 
-.w-\[1440px\] {
-  width: 1440px;
+.min-w-\[300px\] {
+  min-width: 300px;
 }
 
-.w-\[80\%\] {
-  width: 80%;
+.max-w-\[700px\] {
+  max-width: 700px;
 }
 
 <<<<<<< HEAD
@@ -824,14 +816,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
 }
 
 .text-wrap {
@@ -914,11 +898,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#111111\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
-}
-
 .fill-none {
   fill: none;
 }
@@ -937,16 +916,16 @@ video {
   padding: 0.5rem;
 }
 
-.p-\[40px\] {
-  padding: 40px;
-}
-
 .p-desktop {
   padding: 0 38px 0 36px;
 }
 
 .p-\[40px\] {
   padding: 40px;
+}
+
+.p-desktop {
+  padding: 0 38px 0 36px;
 }
 
 .px-2 {
@@ -1030,6 +1009,15 @@ video {
 
 .text-\[12px\] {
   font-size: 12px;
+=======
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+>>>>>>> 972859f (add: develop hero component)
 }
 
 .text-\[18px\] {
@@ -1056,10 +1044,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
 }
 
 .font-black {
@@ -1101,14 +1085,14 @@ video {
   color: rgb(112 112 114 / var(--tw-text-opacity));
 }
 
-.text-\[\#111111\] {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(17 17 17 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .outline-none {
@@ -1181,6 +1165,10 @@ h1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .max-\[600px\]\:flex-col {
+    flex-direction: column;
+  }
+
   .max-\[600px\]\:text-left {
     text-align: left;
 >>>>>>> 972859f (add: develop hero component)
@@ -1190,6 +1178,10 @@ h1 {
 @media (min-width: 600px) {
   .min-\[600px\]\:hidden {
     display: none;
+  }
+
+  .min-\[600px\]\:flex-col {
+    flex-direction: column;
   }
 }
 
