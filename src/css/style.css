@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
+@font-face {
+    font-family: Futura;
+    src: url(../assets/fonts/Futura\ Condensed\ Extra\ Bold.otf);
+}
+@font-face {
     font-family: HelveticaNowText-Medium;
     src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
     font-weight: 700;
@@ -11,6 +15,7 @@ body {
     font-family: HelveticaNowText-Regular ;
     src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
 }
+
 body {
     font-family: HelveticaNowText-Regular;
     overflow-x: hidden;
@@ -26,7 +31,6 @@ body {
 }
 h1 {
     font-family: Futura;
-    
 }
 @media (max-width: 960px) {
     #image {
@@ -37,4 +41,3 @@ h1 {
     }
   
 }
-
