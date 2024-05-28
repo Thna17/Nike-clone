@@ -381,7 +381,7 @@ textarea {
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
-  color: #9ca3af;
+  color: #707072;
   /* 2 */
 }
 
@@ -389,7 +389,7 @@ input::placeholder,
 textarea::placeholder {
   opacity: 1;
   /* 1 */
-  color: #9ca3af;
+  color: #707072;
   /* 2 */
 }
 
@@ -1011,12 +1011,16 @@ video {
   text-align: center;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .font-Futura {
   font-family: Futura;
+}
+
+.font-HelveticaNowText_Regular {
+  font-family: HelveticaNowText-Regular;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl {
@@ -1042,6 +1046,18 @@ video {
 >>>>>>> 972859f (add: develop hero component)
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
+}
+
 .text-\[75px\] {
   font-size: 75px;
 }
@@ -1054,18 +1070,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[18px\] {
-  font-size: 18px;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
-}
-
-.text-\[36px\] {
-  font-size: 36px;
 }
 
 .font-black {
@@ -1109,7 +1113,7 @@ video {
 
 .text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: rgb(112 112 114 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1142,28 +1146,8 @@ video {
   src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
 }
 
-@font-face {
-  font-family: Futura;
-
-  src: url(../assets/fonts/Futura\ Condensed\ Extra\ Bold.otf);
-}
-
-@font-face {
-  font-family: HelveticaNowText-Medium;
-
-  src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
-
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: HelveticaNowText-Regular ;
-
-  src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
-}
-
 body {
-  font-family: HelveticaNowText-Regular;
+  font-family: HelveticaNowText-Medium;
   overflow-x: hidden;
 }
 
@@ -1177,21 +1161,18 @@ h1 {
   font-family: Futura;
 }
 
->>>>>>> bc4257e (Add: Develop layout1-3)
 @media (max-width: 960px) {
   #image {
     -o-object-fit: cover;
        object-fit: cover;
   }
+
   h1 {
     font-size: 36px;
   }
 }
 
-  h1 {
-    font-size: 36px;
-  }
-
+@media (max-width: 960px) {
   .max-\[960px\]\:hidden {
     display: none;
   }
@@ -1239,19 +1220,17 @@ h1 {
   .mob\:justify-end {
     justify-content: flex-end;
   }
+}
 
-  .min-\[600px\]\:hidden {
-    display: none;
-  }
-
-  .min-\[600px\]\:flex-col {
-    flex-direction: column;
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
   }
 }
 
-@media (min-width: 601px) {
-  .min-\[601px\]\:hidden {
-    display: none;
+@media (min-width: 960px) {
+  .min-\[960px\]\:text-\[56px\] {
+    font-size: 56px;
   }
 }
 
