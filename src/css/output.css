@@ -656,6 +656,10 @@ video {
   margin-top: 48px;
 }
 
+.mt-\[84px\] {
+  margin-top: 84px;
+}
+
 .block {
   display: block;
 }
@@ -704,8 +708,8 @@ video {
   width: 1440px;
 }
 
-.w-\[1440px\] {
-  width: 1440px;
+.w-\[1920px\] {
+  width: 1920px;
 }
 
 .w-\[80\%\] {
