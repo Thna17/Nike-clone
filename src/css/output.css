@@ -955,6 +955,10 @@ video {
   font-family: Futura;
 }
 
+.font-HelveticaNowText_Regular {
+  font-family: HelveticaNowText-Regular;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
