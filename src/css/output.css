@@ -804,10 +804,6 @@ video {
   gap: 10px;
 }
 
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -1157,4 +1153,3 @@ h1 {
     left: 2.5rem;
   }
 }
-

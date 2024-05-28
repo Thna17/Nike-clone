@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="./src/css/output.css">
-    <script src="./src/components/navbar.js" defer></script>
-	<script src="/src/components/hero.js" defer></script>
-    <script src="./src/components/image-card.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/src/js/script.js"></script>
-    <script src="/src/components/classicSpotlight.js"></script>
     <script src="/src/components/footer.js"></script>
+    <script src="/src/components/hero.js"></script>
+    <script src="/src/components/imageCard.js"></script>
+    <script src="/src/components/imageSlider1.js"></script>
+    <script src="/src/components/navbar.js"></script>
+
 
 </head>
 <body>
@@ -48,24 +46,13 @@
             heading="Nike Zegama 2"
         ></image-card>
     </div>
-
-    <div class="flex w-screen overflow-x-auto gap-[10px]">
-      <div class="min-w-[300px] max-w-[700px]">
-        <img src="/assets/images/image-homepage/layout4-img1-homepage.webp" alt="" class="w-full">
-      </div>
-      <div class="min-w-[300px] max-w-[700px]">
-        <img src="/assets/images/image-homepage/layout4-img2-homepage.webp" alt="" class="w-full">
-      </div>
-      <div class="min-w-[300px] max-w-[700px]">
-        <img src="/assets/images/image-homepage/layout4-img3-homepage.webp" alt="" class="w-full">
-      </div>
-      <div class="min-w-[300px] max-w-[700px]">
-        <img src="/assets/images/image-homepage/layout4-img4-homepage.webp" alt="" class="w-full">
-      </div>
-      <div class="min-w-[300px] max-w-[700px]">
-        <img src="/assets/images/image-homepage/layout4-img5-homepage.webp" alt="" class="w-full">
-      </div>
-    </div>
+    <image-slider images='[
+    "/assets/images/image-homepage/layout4-img1-homepage.webp",
+    "/assets/images/image-homepage/layout4-img2-homepage.webp",
+    "/assets/images/image-homepage/layout4-img3-homepage.webp",
+    "/assets/images/image-homepage/layout4-img4-homepage.webp",
+    "/assets/images/image-homepage/layout4-img5-homepage.webp"
+]'></image-slider>
 
     <div class="flex justify-center font-HelveticaNowText_Regular">
         <div class="flex w-[1920px] overflow-x-scroll gap-1">
