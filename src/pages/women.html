@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women</title>
     <link rel="stylesheet" href="../css/output.css">
-    <script defer src="/src/components/imageSlider2.js" data-json="/json/women.json"></script>
-    <script defer src="/src/components/imageSlder3.js"></script>
-    <script src="/src/components/footer.js" defer></script>
-    <script src="/src/components/hero.js" defer></script>
-    <script src="/src/components/imageCard.js" defer></script>
-    <script src="/src/components/imageSlider1.js" defer></script>
-    <script src="/src/components/navbar.js" defer></script>
+    <script src="/src/components/navbar.js"></script>
+    <script src="/src/components/hero.js"></script>
+    <script src="/src/components/image-card.js" defer></script>
+   <script src="/src/components/imageSlider.js"></script>
+
+
 </head>
 <body>
     
@@ -82,6 +81,13 @@
             ></image-card>
         </div>
     </div>
+    <image-slider images='[
+        "/assets/images/image-women/layout4-img1-women.webp",
+        "/assets/images/image-women/layout4-img2-women.webp",
+        "/assets/images/image-women/layout4-img3-women.webp",
+        "/assets/images/image-women/layout4-img4-women.webp",
+        "/assets/images/image-women/layout4-img5-women.webp"
+    ]'></image-slider>
 
     <div class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] ml-[48px]">
@@ -177,11 +183,5 @@
             ></image-card>
             </div>
         </div>
-    </div>
-
-    <div class="mt-[84px]">
-        <footer-component></footer-component>
-    </div>
-
 </body>
 </html>

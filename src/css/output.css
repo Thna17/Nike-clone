@@ -690,24 +690,8 @@ video {
   margin-top: 24px;
 }
 
-.mt-\[48px\] {
-  margin-top: 48px;
-}
-
 .mt-\[84px\] {
   margin-top: 84px;
-}
-
-.mb-2\.5 {
-  margin-bottom: 0.625rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
 }
 
 .block {
@@ -752,6 +736,10 @@ video {
 
 .w-\[1440px\] {
   width: 1440px;
+}
+
+.w-\[1920px\] {
+  width: 1920px;
 }
 
 .w-\[80\%\] {
@@ -1112,6 +1100,26 @@ video {
   outline-offset: 2px;
 }
 
+@font-face {
+  font-family: Futura;
+
+  src: url(../assets/fonts/Futura\ Condensed\ Extra\ Bold.otf);
+}
+
+@font-face {
+  font-family: HelveticaNowText-Medium;
+
+  src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
+
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: HelveticaNowText-Regular ;
+
+  src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
+}
+
 body {
   font-family: HelveticaNowText-Medium;
   src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
@@ -1205,10 +1213,6 @@ h1 {
   .min-\[600px\]\:flex-col {
     flex-direction: column;
   }
-
-  .min-\[600px\]\:flex-col {
-    flex-direction: column;
-  }
 }
 
 @media (min-width: 640px) {
@@ -1216,16 +1220,14 @@ h1 {
     flex-direction: row;
   }
 
-  .tab\:max-h-\[600px\] {
-    max-height: 600px;
+  .sm\:text-center {
+    text-align: center;
   }
+}
 
-  .tab\:max-h-\[700px\] {
-    max-height: 700px;
-  }
-
-  .tab\:max-h-\[800px\] {
-    max-height: 800px;
+@media (min-width: 768px) {
+  .md\:w-\[calc\(33\.33\%-10px\)\] {
+    width: calc(33.33% - 10px);
   }
 }
 
