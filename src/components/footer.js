@@ -4,7 +4,7 @@ class FooterComponent extends HTMLElement {
     }
     
     connectedCallback() {
-        this.setAttribute('class', 'flex justify-center bg-[#111111] font-HelveticaNowText_Regularl')
+        this.setAttribute('class', 'flex justify-center bg-[#111111] font-HelveticaNowText_Regular')
         this.innerHTML = `
         <div class="w-[1440px] p-[40px] pt-10">
           <div class="flex justify-between flex-col mob:flex-row mb-4">
