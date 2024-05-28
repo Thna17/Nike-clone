@@ -676,8 +676,12 @@ video {
   height: 100%;
 }
 
-.w-\[1920px\] {
-  width: 1920px;
+.w-\[1440px\] {
+  width: 1440px;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[84px\] {
@@ -919,6 +923,10 @@ video {
   font-family: Futura;
 }
 
+.font-HelveticaNowText_Regular {
+  font-family: HelveticaNowText-Regular;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1060,10 +1068,6 @@ h1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .max-\[600px\]\:flex-col {
-    flex-direction: column;
-  }
-
   .max-\[600px\]\:text-left {
     text-align: left;
   }
@@ -1092,10 +1096,6 @@ h1 {
 
   .min-\[600px\]\:hidden {
     display: none;
-  }
-
-  .min-\[600px\]\:flex-col {
-    flex-direction: column;
   }
 }
 
