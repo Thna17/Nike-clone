@@ -812,6 +812,10 @@ video {
   gap: 10px;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -981,6 +985,10 @@ video {
 
 .font-Futura {
   font-family: Futura;
+}
+
+.font-HelveticaNowText_Regular {
+  font-family: HelveticaNowText-Regular;
 }
 
 .text-2xl {
