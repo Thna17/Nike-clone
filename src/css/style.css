@@ -23,7 +23,6 @@ body {
 }
 h1 {
     font-family: Futura;
-    
 }
 @media (max-width: 960px) {
     #image {
@@ -34,3 +33,4 @@ h1 {
     }
   
 }
+
