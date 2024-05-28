@@ -48,8 +48,26 @@ module.exports = {
         Futura: 'Futura',
         HelveticaNowText_Regular: 'HelveticaNowText-Regular',
         HelveticaNowText_Medium: 'HelveticaNowText-Medium'
-      }
+      },
+      spacing: {
+        '40px': '40px',
+      },
+      width: {
+        '1440': '1440px',
+      },
+      colors: {
+        gray: {
+          400: '#707072',
+        },
+      },
+      
     },
+    variants: {
+      extend: {
+        display: ['responsive'],
+      },
+    },
+
   },
   plugins: [  
     require('tailwindcss'),
