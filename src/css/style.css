@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: HelveticaNowText-Medium;
+    font-family: HelveticaNowText-Regular;
     overflow-x: hidden;
 }
 @media (min-width:961px) {
@@ -41,3 +41,4 @@ h1 {
     }
   
 }
+
