@@ -18,17 +18,6 @@
 
 body {
     font-family: HelveticaNowText-Medium;
-    src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
-    font-weight: 700;
-   
-}
-@font-face {
-    font-family: HelveticaNowText-Regular ;
-    src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
-}
-
-body {
-    font-family: HelveticaNowText-Regular;
     overflow-x: hidden;
 }
 @media (min-width:961px) {
@@ -42,12 +31,6 @@ body {
 }
 h1 {
     font-family: Futura;
-<<<<<<< HEAD
-}
-h1 {
-    font-family: Futura;
-=======
->>>>>>> 5b880a5 (add: develop hero component)
 }
 @media (max-width: 960px) {
     #image {
@@ -58,3 +41,4 @@ h1 {
     }
   
 }
+

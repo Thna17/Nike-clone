@@ -5,28 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women</title>
     <link rel="stylesheet" href="../css/output.css">
-    <script src="/src/components/navbar.js"></script>
-    <script src="/src/components/hero.js"></script>
-    <script src="/src/components/image-card.js" defer></script>
-   <script src="/src/components/imageSlider.js"></script>
-
-
+    <script defer src="/src/components/imageSlider2.js" data-json="/json/women.json"></script>
+    <script defer src="/src/components/imageSlder3.js"></script>
+    <script src="/src/components/footer.js" defer></script>
+    <script src="/src/components/hero.js" defer></script>
+    <script src="/src/components/imageCard.js" defer></script>
+    <script src="/src/components/imageSlider1.js" defer></script>
+    <script src="/src/components/navbar.js" defer></script>
 </head>
 <body>
+    
     <component-navbar></component-navbar>
 
     <div class="flex justify-center">
        <div class="w-[1920px] mx-[48px]">
         <hero-component
-            img-url-bg="/assets/images/women-page/layout1-img1-women.webp"
-            img-url-sm="/assets/images/women-page/layout1-img2-women.webp"
+            img-url-bg="/assets/images/image-women/layout1-img1-women.webp"
+            img-url-sm="/assets/images/image-women/layout1-img2-women.webp"
             heading="FEEL SCULPTED "
             paragraph="Made for all your water-based adventures."
             button="Shop"
         ></hero-component>
        </div>
     </div>
-    
+
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[24px] ">Shop the Essentials</h2>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div class="w-full max-w-[1920px] flex gap-[10px] mx-[48px] overflow-x-scroll">
+            <div class="flex-shrink-0 min-w-[300px] max-w-[610px] w-full md:w-[calc(33.33%-10px)]">
+                <img src="/assets/images/image-women/layout2-img1-women.webp" alt="" class="w-full">
+                <div class="pt-[16px]">
+                    <h3 class="text-[20px]">Clothing</h3>
+                </div>
+            </div>
+            <div class="flex-shrink-0 min-w-[300px] max-w-[610px] w-full md:w-[calc(33.33%-10px)]">
+                <img src="/assets/images/image-women/layout2-img2-women.webp" alt="" class="w-full">
+                <div class="pt-[16px]">
+                    <h3 class="text-[20px]">Shoes</h3>
+                </div>
+            </div>
+            <div class="flex-shrink-0 min-w-[300px] max-w-[610px] w-full md:w-[calc(33.33%-10px)]">
+                <img src="/assets/images/image-women/layout2-img3-women.webp" alt="" class="w-full">
+                <div class="pt-[16px]">
+                    <h3 class="text-[20px]">Accessories</h3>
+                </div>
+            </div>
+            <div class="flex-shrink-0 min-w-[300px] max-w-[610px] w-full md:w-[calc(33.33%-10px)]">
+                <img src="/assets/images/image-women/layout2-img4-women.webp" alt="" class="w-full">
+                <div class="pt-[16px]">
+                    <h3 class="text-[20px]">Bras & Legging</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[24px] ">Trending</h2>
+        </div>
+    </div>
     <div class="flex justify-center">
         <div class="w-[1920px] flex gap-[10px] mx-[48px] max-[600px]:flex-col  ">
             <image-card
@@ -41,15 +82,46 @@
             ></image-card>
         </div>
     </div>
-    <image-slider images='[
-        "/assets/images/image-women/layout4-img1-women.webp",
-        "/assets/images/image-women/layout4-img2-women.webp",
-        "/assets/images/image-women/layout4-img3-women.webp",
-        "/assets/images/image-women/layout4-img4-women.webp",
-        "/assets/images/image-women/layout4-img5-women.webp"
-    ]'></image-slider>
 
-    <div class="flex  justify-center mt-[84px]">
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[24px] ">Classics Spotlight</h2>
+        </div>
+    </div>
+    <div class="flex justify-center w-screen" >
+        <image-slider images='[
+            "/assets/images/image-women/layout4-img1-women.webp",
+            "/assets/images/image-women/layout4-img2-women.webp",
+            "/assets/images/image-women/layout4-img3-women.webp",
+            "/assets/images/image-women/layout4-img4-women.webp",
+            "/assets/images/image-women/layout4-img4-women.webp"
+        ]'></image-slider>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[24px] ">More to Explore</h2>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div id="dynamicComponentContainer" class="w-full max-w-[1920px] flex gap-[10px] mx-[48px] overflow-x-scroll"></div>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[24px] ">Popular Right Now</h2>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div class="carousel w-full max-w-[1920px] flex gap-[10px] mx-[48px] overflow-x-scroll"></div>
+    </div>
+    
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[24px] ">Nike Membership</h2>
+        </div>
+    </div>
+    <div class="flex  justify-center ">
         <div class="w-[1920px] flex overflow-x-scroll gap-[10px] mx-[48px]">
             <div class=" min-w-[300px] tab:min-w-[500px] dsk:min-w-[600px]">
                 <image-card
@@ -105,7 +177,11 @@
             ></image-card>
             </div>
         </div>
+    </div>
+
+    <div class="mt-[84px]">
+        <footer-component></footer-component>
+    </div>
+
 </body>
 </html>
-<img src="" alt="">
-
