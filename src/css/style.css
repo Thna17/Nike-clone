@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-    font-family: HelveticaNowText-Medium;
+    font-family: HelveticaNowText-regular;
     overflow-x: hidden;
 }
 @media (min-width:961px) {
