@@ -53,6 +53,7 @@ module.exports = {
       HelveticaNowText_Regular: 'HelveticaNowText-Regular',
       HelveticaNowText_Medium: 'HelveticaNowText-Medium'
     }
+    
   },
   plugins: [  
     require('tailwindcss'),

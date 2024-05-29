@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: HelveticaNowText-Medium;
+    font-family: HelveticaNowText-Regular;
     overflow-x: hidden;
 }
 @media (min-width:961px) {
@@ -40,4 +40,30 @@ h1 {
         font-size: 36px;
     }
   
+}
+
+@layer utilities {
+  @variants responsive {
+    .first\:ml-0:first-child {
+      margin-left: 0 !important;
+    }
+  }
+
+  @screen xl {
+    .xl\:content-category-main {
+      @apply relative;
+    }
+    .xl\:content-bottom-right {
+      @apply flex justify-center items-center absolute w-full h-full top-0;
+    }
+  }
+
+  @screen lg {
+    .lg\:content-category-main {
+      @apply flex justify-between;
+    }
+    .lg\:content-bottom-right {
+      @apply self-center;
+    }
+  }
 }
