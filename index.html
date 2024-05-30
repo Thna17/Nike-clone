@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="./src/css/output.css">
-    <script src="./src/components/navbar.js" defer></script>
-	<script src="/src/components/hero.js" defer></script>
-    <script src="./src/components/image-card.js" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/src/js/script.js"></script>
-    <script src="/src/components/classicSpotlight.js"></script>
     <script src="/src/components/footer.js"></script>
+    <script src="/src/components/hero.js"></script>
+    <script src="/src/components/imageCard.js"></script>
+    <script src="/src/components/imageSlider1.js"></script>
+    <script src="/src/components/navbar.js"></script>
+
 
 </head>
 <body>
-
     <component-navbar></component-navbar>
 
 	<hero-component
-        img-url-bg="/assets/images/image-homepage/layout1-homepage.webp"
+        img-url-bg="./assets/images/image-homepage/layout1-homepage.webp"
         img-url-sm="/assets/images/image-homepage/layout1-sm-homepage.webp"
         heading="PLAY AT YOUR PEAK"
         paragraph="From 5.20–5.24, shop fresh kicks, adventure essentials, and the best of <br> summer style—with exclusive rewards for Nike Members."
@@ -49,15 +46,40 @@
             heading="Nike Zegama 2"
         ></image-card>
     </div>
-    <image-slider images='[
-    "/assets/images/image-homepage/layout4-img1-homepage.webp",
-    "/assets/images/image-homepage/layout4-img2-homepage.webp",
-    "/assets/images/image-homepage/layout4-img3-homepage.webp",
-    "/assets/images/image-homepage/layout4-img4-homepage.webp",
-    "/assets/images/image-homepage/layout4-img5-homepage.webp"
-]'></image-slider>
+    
+    <div class="w-screen mt-[84px] ">
+        <div class=" flex flex-col items-center mb-[42px]">
+            <div class="font-Futura text-[42px]">NEW THIS WEEK</div>
+            <div>
+                <div class="inline-block bg-black rounded-[20px] font-semibold py-1.5 px-4 text-white mt-6">Shop New Arrivals</div>
+            </div>
+        </div>
+        <div>
+            <img src="/assets/images/image-homepage/layout3-homepage.webp" alt="">
+        </div>
+    </div>
 
-    <div class="flex justify-center font-HelveticaNowText_Regular">
+    <div class="flex justify-center mt-[84px] mb-[42px] font-Futura">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[42px] ">SHOP BY CLASSICS</h2>
+        </div>
+    </div>
+    <div class="flex justify-center w-screen" >
+        <image-slider images='[
+            "/assets/images/image-women/layout4-img1-women.webp",
+            "/assets/images/image-women/layout4-img2-women.webp",
+            "/assets/images/image-women/layout4-img3-women.webp",
+            "/assets/images/image-women/layout4-img4-women.webp",
+            "/assets/images/image-women/layout4-img4-women.webp"
+        ]'></image-slider>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px] font-Futura">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[42px] ">NIKE MEMBERSHIP</h2>
+        </div>
+    </div>
+    <div class="flex justify-center font-HelveticaNowText_Regular mb-[84px]">
         <div class="flex w-[1920px] overflow-x-scroll gap-1">
             <div class="min-w-[500px] max-w-screen-2xl">
                 <image-card
@@ -83,50 +105,9 @@
                 ></image-card>
             </div>
         </div>
- 
-
     </div>
+    <footer-component></footer-component>
 
-    <div>
-        <a href="" class="block  w-full">
-          <div class="relative flex justify-center items-center">
-            <img src="./assets/images/image-homepage/layout1-homepage.webp" alt="" class="h-full w-full">
-          </div>
-          <div class="relative w-full text-center mt-[24px]">
-            <h1 class="text-black text-[75px] font-bold">PLAY AT YOUR PEAK</h1>
-            <p class="text-[#111111] text-[16px] font-arial font-normal mt-[12px] ">From 5.20–5.24, shop fresh kicks, adventure essentials, and the best of <br> summer style—with exclusive rewards for Nike Members.</p>
-            <div class="inline-block bg-black rounded-[20px] py-[7px] px-[20px] text-white font-medium mt-4 mb-4">Shop Summer Event</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="grid w-screen grid-cols-2 max-[600px]:grid-cols-1">
-        <div class="w-full object-cover h-[500px]">
-            <img src="./assets/images/image-homepage/layout2-img1-homepage.webp" alt="" class="w-full  h-full" id="image">
-        </div>
-        <div class="w-full object-cover h-[500px]">
-            <img src="./assets/images/image-homepage/layout2-img2-homepage.webp" alt="" class="w-full  h-full " id="image">
-        </div>
-        <div class="w-full h-[500px] object-cover">
-            <img src="./assets/images/image-homepage/layout2-img3-homepage.webp" alt="" class="w-full   h-full" id="image">
-        </div>
-        <div class="w-full h-[500px] object-cover object-left">
-            <img src="./assets/images/image-homepage/layout2-img4-homepage.webp" alt="" class="w-full  h-full object-left" id="image">
-        </div>
-      </div>
-      
-      <div class="flex flex-col items-center">
-        <div class="w-full text-center mt-8">
-          <h1 class="text-4xl font-bold">NEW THIS WEEK</h1>
-        </div>
-        <div class="mt-4">
-          <div class="inline-block bg-black text-white  rounded-full py-2 px-5">Shop Now Arrivals</div>
-        </div>
-      </div>
-
-      <div class="mt-[48px]" >
-        <img src=".//assets/images/image-homepage/layout3-homepage.webp" alt="" class="max-[600px]:hidden">
-        <img src="./assets/images/image-homepage/layput3-sm-homepage.webp" alt="" class="min-[601px]:hidden">
-      </div>
+   
 </body>
 </html>

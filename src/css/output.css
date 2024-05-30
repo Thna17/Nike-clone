@@ -628,6 +628,10 @@ video {
   margin-bottom: 42px;
 }
 
+.mb-\[84px\] {
+  margin-bottom: 84px;
+}
+
 .ml-\[48px\] {
   margin-left: 48px;
 }
@@ -648,10 +652,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-\[12px\] {
   margin-top: 12px;
 }
@@ -664,20 +664,12 @@ video {
   margin-top: 24px;
 }
 
-.mt-\[48px\] {
-  margin-top: 48px;
+.mt-\[42px\] {
+  margin-top: 42px;
 }
 
 .mt-\[84px\] {
   margin-top: 84px;
-}
-
-.mb-\[84px\] {
-  margin-bottom: 84px;
-}
-
-.mt-\[42px\] {
-  margin-top: 42px;
 }
 
 .block {
@@ -706,10 +698,6 @@ video {
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-\[500px\] {
-  height: 500px;
 }
 
 .h-auto {
@@ -828,10 +816,6 @@ video {
   gap: 10px;
 }
 
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -850,10 +834,6 @@ video {
 
 .rounded-\[20px\] {
   border-radius: 20px;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .border-2 {
@@ -901,11 +881,6 @@ video {
      object-fit: cover;
 }
 
-.object-left {
-  -o-object-position: left;
-     object-position: left;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -933,11 +908,6 @@ video {
   padding-right: 1rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .px-\[16px\] {
   padding-left: 16px;
   padding-right: 16px;
@@ -961,11 +931,6 @@ video {
 .py-1\.5 {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .py-\[6px\] {
@@ -1012,17 +977,8 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-\[12px\] {
   font-size: 12px;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
 }
 
 .text-\[18px\] {
@@ -1041,8 +997,8 @@ video {
   font-size: 36px;
 }
 
-.text-\[75px\] {
-  font-size: 75px;
+.text-\[42px\] {
+  font-size: 42px;
 }
 
 .text-lg {
@@ -1058,10 +1014,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[42px\] {
-  font-size: 42px;
 }
 
 .font-black {
@@ -1122,9 +1074,17 @@ video {
   outline-offset: 2px;
 }
 
-body {
+@font-face {
+  font-family: Futura;
+
+  src: url(../assets/fonts/Futura\ Condensed\ Extra\ Bold.otf);
+}
+
+@font-face {
   font-family: HelveticaNowText-Medium;
+
   src: url(../assets/fonts/HelveticaNowText-Medium.ttf);
+
   font-weight: 700;
 }
 
@@ -1135,7 +1095,7 @@ body {
 }
 
 body {
-  font-family: HelveticaNowText-Medium;
+  font-family: HelveticaNowText-Regular;
   overflow-x: hidden;
 }
 
@@ -1166,10 +1126,6 @@ h1 {
 
   .max-\[960px\]\:hidden {
     display: none;
-  }
-
-  .max-\[960px\]\:p-teblet {
-    padding: 0 14px 0 16px;
   }
 }
 
@@ -1218,24 +1174,6 @@ h1 {
 
   .min-\[600px\]\:flex-col {
     flex-direction: column;
-  }
-}
-
-@media (min-width: 601px) {
-  .min-\[601px\]\:hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 640px) {
-  .sm\:text-center {
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:w-\[calc\(33\.33\%-10px\)\] {
-    width: calc(33.33% - 10px);
   }
 }
 
