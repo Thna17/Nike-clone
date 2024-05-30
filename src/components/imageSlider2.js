@@ -11,7 +11,7 @@ async function generateDynamicComponent(jsonFileName) {
         // Loop through data and create elements
         data.forEach(item => {
             const div = document.createElement("div");
-            div.classList.add("flex-shrink-0", "min-w-[300px]", "max-w-[610px]", "w-full", "md:w-[calc(33.33%-10px)]");
+            div.classList.add("flex-shrink-0", "min-w-[300px]", "max-w-[630px]", "w-full", "md:w-[calc(33.33%-10px)]");
 
             const img = document.createElement("img");
             img.src = item.imageUrl;
