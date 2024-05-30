@@ -52,7 +52,7 @@ class Navbar extends HTMLElement {
                         <object data="/assets/images/icons & logos/search.svg" type=""></object>
                     </button >
                     <button class="bg-[#F5F5F5] relative py-[8px] px-[48px] rounded-3xl border-2 border-solid border-transparent z-0 max-[960px]:hidden">
-                        <input type="text" placeholder="search" class="inline-block w-[84px] outline-none bg-transparent fill-none text-lg">
+                        <input type="text" placeholder="Search" class="inline-block w-[84px] outline-none bg-transparent fill-none text-lg">
                     </button>
                     <button class="p-2 max-[960px]:hidden">
                         <object data="/assets/images/icons & logos/heart.svg" type=""></object>
