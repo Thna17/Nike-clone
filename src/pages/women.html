@@ -14,11 +14,16 @@
     <script src="/src/components/navbar.js" defer></script>
 </head>
 <body>
-    
-    <component-navbar></component-navbar>
+    <div class="flex justify-center">
+        <component-navbar
+            homepageUrlPath="/index.html"
+            menUrlPath="./men.html"
+            kidsUrlPath="./kids.html"
+        ></component-navbar>
+    </div>
 
     <div class="flex justify-center">
-       <div class="w-[1920px] mx-[48px]">
+       <div class="w-[1920px] mob:mx-[48px] mx-[24px]">
         <hero-component
             img-url-bg="/assets/images/image-women/layout1-img1-women.webp"
             img-url-sm="/assets/images/image-women/layout1-img2-women.webp"
@@ -30,12 +35,12 @@
     </div>
 
     <div class="flex justify-center mt-[84px] mb-[42px]">
-        <div class="w-[1920px] ml-[48px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Shop the Essentials</h2>
         </div>
     </div>
     <div class="flex justify-center">
-        <div class="w-full max-w-[1920px] flex gap-[10px] mx-[48px] overflow-x-scroll">
+        <div class="w-full max-w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] overflow-x-scroll">
             <div class="flex-shrink-0 min-w-[300px] max-w-[610px] w-full md:w-[calc(33.33%-10px)]">
                 <img src="/assets/images/image-women/layout2-img1-women.webp" alt="" class="w-full">
                 <div class="pt-[16px]">
@@ -64,12 +69,12 @@
     </div>
 
     <div class="flex justify-center mt-[84px] mb-[42px]">
-        <div class="w-[1920px] ml-[48px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Trending</h2>
         </div>
     </div>
     <div class="flex justify-center">
-        <div class="w-[1920px] flex gap-[10px] mx-[48px] max-[600px]:flex-col  ">
+        <div class="w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] max-[600px]:flex-col  ">
             <image-card
                 img-url-bg="/assets/images/image-women/layout3-img1-women.webp"
                 paragraph="Just In"
@@ -84,7 +89,7 @@
     </div>
 
     <div class="flex justify-center mt-[84px] mb-[42px]">
-        <div class="w-[1920px] ml-[48px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Classics Spotlight</h2>
         </div>
     </div>
@@ -99,30 +104,30 @@
     </div>
 
     <div class="flex justify-center mt-[84px] mb-[42px]">
-        <div class="w-[1920px] ml-[48px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">More to Explore</h2>
         </div>
     </div>
     <div class="flex justify-center">
-        <div id="dynamicComponentContainer" class="w-full max-w-[1920px] flex gap-[10px] mx-[48px] overflow-x-scroll"></div>
+        <div id="dynamicComponentContainer" class="w-full max-w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] overflow-x-scroll"></div>
     </div>
 
     <div class="flex justify-center mt-[84px] mb-[42px]">
-        <div class="w-[1920px] ml-[48px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Popular Right Now</h2>
         </div>
     </div>
     <div class="flex justify-center">
-        <div class="carousel w-full max-w-[1920px] flex gap-[10px] mx-[48px] overflow-x-scroll"></div>
+        <div class="carousel w-full max-w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] overflow-x-scroll"></div>
     </div>
     
     <div class="flex justify-center mt-[84px] mb-[42px]">
-        <div class="w-[1920px] ml-[48px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Nike Membership</h2>
         </div>
     </div>
     <div class="flex  justify-center ">
-        <div class="w-[1920px] flex overflow-x-scroll gap-[10px] mx-[48px]">
+        <div class="w-[1920px] flex overflow-x-scroll gap-[10px] mob:mx-[48px] mx-[24px]">
             <div class=" min-w-[300px] tab:min-w-[500px] dsk:min-w-[600px]">
                 <image-card
                 img-url-bg="/assets/images/image-women/layout7-img1-women.webp"
@@ -179,9 +184,41 @@
         </div>
     </div>
 
-    <div class="mt-[84px]">
-        <footer-component></footer-component>
+    <div class="flex justify-center mb-[42px] mt-[84px]">
+        <div class="flex w-[880px] justify-between font-HelveticaNowText_Medium mob:mx-[48px] mx-[24px] flex-col mob:flex-row">
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Shoes</li>
+            <li class="text-gray-500 mb-[16px] font-se max-[600px]:hidden">Running</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Basketball</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Golf</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Tennis Shoes</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Cltohing</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Tops & T-Shirts</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Jackets</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Hoodies</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Pants</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Gear</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">All Men's Gear</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Sock</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Bags & Backpack</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Balls</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Featured</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">New Releases</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Clearance</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Metcon</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">NFL</li>
+        </ul>
+        </div>
     </div>
+
+    <footer-component></footer-component>
+   
 
 </body>
 </html>

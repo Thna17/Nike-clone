@@ -5,7 +5,11 @@ class Navbar extends HTMLElement {
     }
 
     connectedCallback() {
-        this.setAttribute('class', 'w-screen HelveticaNowText-Medium font-black')
+        const homepagepath = this.getAttribute('homepageUrlPath');
+        const menPath = this.getAttribute('menUrlPath');
+        const womenPath = this.getAttribute('womenUrlPath');
+        const kidsPath = this.getAttribute('kidsUrlPath');
+        this.setAttribute('class', 'w-[1920px] flex flex-col HelveticaNowText-Medium font-black')
         this.innerHTML = `
                 <!-- First navigation bar -->
                 <nav class="h-9 p-desktop flex justify-between items-center max-[960px]:hidden">
@@ -32,19 +36,21 @@ class Navbar extends HTMLElement {
                 </nav>
 
                 <!-- Second navigation bar -->
-                <nav class="w-screen h-15 flex items-center p-desktop max-[960px]:p-teblet">
+                <nav class="w-full h-15 flex items-center p-desktop max-[960px]:p-teblet">
                     <!-- Add logo -->
                     <div class="h-full w-full flex justify-start">
-                        <img src="/assets/images/icons & logos/logo.svg" alt="" class="h-full">
+                        <a href="${homepagepath}">
+                            <img src="/assets/images/icons & logos/logo.svg" alt="" class="h-full">
+                        </a>
                     </div>
                     <!-- Add menu items -->
                     <div class="w-full justify-center flex max-[960px]:hidden text-nowrap">
-                        <span class="px-3">New & Featured</span>
-                        <span class="px-3">Men</span>
-                        <span class="px-3">Women</span>
-                        <span class="px-3">Kids</span>
-                        <span class="px-3">Jordan</span>
-                        <span class="px-3">Sale</span>
+                        <span class="px-3"><a href="#">New & Featured</a></span>
+                        <span class="px-3"><a href="${menPath}">Men</a></span>
+                        <span class="px-3"><a href="${womenPath}">Women</a></span>
+                        <span class="px-3"><a href="${kidsPath}">Kids</a></span>
+                        <span class="px-3"><a href="">Jordan</a></span>
+                        <span class="px-3"><a href="">Shop</a></span>
                     </div>
                     <!-- Add search and other buttons -->
                     <div class="w-full flex justify-end">

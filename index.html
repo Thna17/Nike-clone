@@ -14,8 +14,15 @@
 
 </head>
 <body>
-    <component-navbar></component-navbar>
 
+    <div class="flex justify-center">
+            <component-navbar
+                menUrlPath="./src/pages/men.html"
+                womenUrlPath="./src/pages/women.html"
+                kidsUrlPath="./src/pages/kids.html"
+            ></component-navbar>
+    </div>
+    <img src="" alt="">
 	<hero-component
         img-url-bg="./assets/images/image-homepage/layout1-homepage.webp"
         img-url-sm="/assets/images/image-homepage/layout1-sm-homepage.webp"
@@ -74,7 +81,7 @@
         ]'></image-slider>
     </div>
 
-    <div class="flex justify-center mt-[84px] mb-[42px] font-Futura">
+    <div class="flex justify-center mt-[84px] font-Futura">
         <div class="w-[1920px] ml-[48px]">
             <h2 class="text-[42px] ">NIKE MEMBERSHIP</h2>
         </div>
@@ -106,6 +113,40 @@
             </div>
         </div>
     </div>
+
+    <div class="flex justify-center mb-[42px] mt-[84px]">
+        <div class="flex w-[880px] justify-between font-HelveticaNowText_Medium mx-[42px] flex-col mob:flex-row">
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Shoes</li>
+            <li class="text-gray-500 mb-[16px] font-se max-[600px]:hidden">Running</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Basketball</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Golf</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Tennis Shoes</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Cltohing</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Tops & T-Shirts</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Jackets</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Hoodies</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Pants</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Gear</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">All Men's Gear</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Sock</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Bags & Backpack</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Balls</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Featured</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">New Releases</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Clearance</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Metcon</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">NFL</li>
+        </ul>
+        </div>
+    </div>
+
     <footer-component></footer-component>
 
    

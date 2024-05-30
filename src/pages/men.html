@@ -12,7 +12,13 @@
     <script src="/src/components/hero.js"></script>
 </head>
 <body>
-    <component-navbar></component-navbar>
+    <div class="flex justify-center">
+        <component-navbar 
+            homepageUrlPath="/index.html"
+            womenUrlPath="./women.html"
+            kidsUrlPath="./kids.html"
+        ></component-navbar>
+    </div>
 
     <hero-component
         img-url-bg="/assets/images/image-men/layout1-men.webp"
@@ -23,12 +29,12 @@
     ></hero-component>
 
     <div class="flex justify-center mt-[84px] mb-[42px]">
-        <div class="w-[1920px] ml-[48px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Sizes for All</h2>
         </div>
     </div>
     <div class="justify-center flex  ">
-        <div class="w-[1920px] flex gap-[10px] mx-[48px] flex-col mob:flex-row ">
+        <div class="w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] flex-col mob:flex-row ">
             <div class=" min-w-[250px] min-h-[400px] ">
                 <image-card
                     img-url-bg="/assets/images/image-men/layout2-img1-men.webp"
@@ -45,12 +51,12 @@
     </div>
 
     <div class="flex justify-center mt-[84px] mb-[42px]">
-        <div class="w-[1920px] ml-[48px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">More to Explore</h2>
         </div>
     </div>
     <div class=" flex justify-center">
-        <div class=" flex w-[1920px]  mx-[48px] flex-col mob:flex-row  gap-[10px] font-HelveticaNowText_Regular">
+        <div class=" flex w-[1920px]  mob:mx-[48px] mx-[24px] flex-col mob:flex-row  gap-[10px] font-HelveticaNowText_Regular">
             <div class="w-full flex  gap-[10px] order-1 flex-col ">
                 <div class=" w-full mob:min-h-[600px] max-h-[800px] relative">
                     <img src="/assets/images/image-men/layout4-im1-men.webp" alt="" class="mob:h-full object-cover w-full">
@@ -62,8 +68,8 @@
                 <div class=" w-full mob:min-h-[400px] max-h-[600px] relative">
                     <img src="/assets/images/image-men/layout4-img2-men.webp" alt="" class=" mob:h-full object-cover object-right w-full  ">
                     <div class="mob:absolute bottom-[50px] left-[50px]">
-                        <h3 class="text-[24px] font-medium mb-[10px] text-nike-white">Running Essentials</h3>
-                        <div class="inline-block bg-nike-white rounded-[20px] font-medium py-[6px] px-[16px] text-nike-black text-[16px] mt-4 mb-4">Shop</div>
+                        <h3 class="text-[24px] font-medium mb-[10px] text-nike-white max-[600px]:text-nike-black">Running Essentials</h3>
+                        <div class="inline-block bg-nike-white rounded-[20px] font-medium py-[6px] px-[16px] text-nike-black text-[16px] mt-4 mb-4  max-[600px]:bg-nike-black max-[600px]:text-nike-white">Shop</div>
                     </div>
                 </div>
             </div>
@@ -71,8 +77,8 @@
                 <div class="w-full mob:min-h-[400px] max-h-[600px] relative">
                     <img src="/assets/images/image-men/layout4-img3-men.webp" alt="" class=" mob:h-full object-cover object-right w-full">
                     <div class="mob:absolute bottom-[50px] left-[50px]">
-                        <h3 class="text-[24px] font-medium mb-[10px] text-nike-white">Versatile Workout Styles</h3>
-                        <div class="inline-block bg-nike-white rounded-[20px] font-medium py-[6px] px-[16px] text-nike-black text-[16px] mt-4 mb-4">Shop</div>
+                        <h3 class="text-[24px] font-medium mb-[10px] text-nike-white   max-[600px]:text-nike-black">Versatile Workout Styles</h3>
+                        <div class="inline-block bg-nike-white rounded-[20px] font-medium py-[6px] px-[16px] text-nike-black text-[16px] mt-4 mb-4  max-[600px]:bg-nike-black max-[600px]:text-nike-white">Shop</div>
                     </div>
                 </div>
                 <div class="w-full mob:min-h-[600px] max-h-[800px] relative">
@@ -88,7 +94,7 @@
     </div>
     
     <div class="flex justify-center mt-[84px] mb-[42px]">
-        <div class="w-[1920px] ml-[48px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Classics Spotlight</h2>
         </div>
     </div>
@@ -103,12 +109,12 @@
     </div>
 
     <div class="flex justify-center mt-[84px] mb-[42px]">
-        <div class="w-[1920px] ml-[48px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Member Benifits</h2>
         </div>
     </div>
-    <div class="flex  justify-center mb-[42px]">
-        <div class="w-[1920px] flex overflow-x-scroll gap-[10px] mx-[48px]">
+    <div class="flex  justify-center">
+        <div class="w-[1920px] flex overflow-x-scroll gap-[10px] mob:mx-[48px] mx-[24px]">
             <div class=" min-w-[300px] tab:min-w-[500px] dsk:min-w-[600px]">
                 <image-card
                 img-url-bg="/assets/images/image-men/layout7-img1-men.webp"
@@ -162,6 +168,40 @@
                 button="Add Interests"
                 ></image-card>
             </div>
+        </div>
+    </div>
+
+
+    <div class="flex justify-center mb-[42px] mt-[84px]">
+        <div class="flex w-[880px] justify-between font-HelveticaNowText_Medium mob:mx-[48px] mx-[24px] flex-col mob:flex-row">
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Shoes</li>
+            <li class="text-gray-500 mb-[16px] font-se max-[600px]:hidden">Running</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Basketball</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Golf</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Tennis Shoes</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Cltohing</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Tops & T-Shirts</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Jackets</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Hoodies</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Pants</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Gear</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">All Men's Gear</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Sock</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Bags & Backpack</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Balls</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Featured</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">New Releases</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Clearance</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Metcon</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">NFL</li>
+        </ul>
         </div>
     </div>
 
