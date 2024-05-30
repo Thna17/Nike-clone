@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", './src/components/*.js', "./src/pages/**/*.{html,js}"],
+  content: ["./index.html", './src/components/*.js',  "./src/pages/**/*.{html,js}"],
   theme: {
     extend: {
       textColor: {
@@ -34,8 +34,8 @@ module.exports = {
         'nike-text-orange-red': '#9E3500',
       },
       padding: {
-        'desktop': '0 38px 0 36px',
-        'tablet': '0 14px 0 16px' // Corrected typo
+        'desktop' : '0 38px 0 36px',
+        'teblet' : '0 14px 0 16px'
       },
       screens: {
         'tablet' : '960px'
@@ -45,6 +45,14 @@ module.exports = {
       },
       height: {
         '15' : '60px'
+      },
+      screens: {
+        tab: '960px',
+        mob: '600px'
+      },
+      fontFamily: {
+        Futura: 'Futura'
+      }
     },
     screens: {
       tab: '960px',
@@ -56,8 +64,8 @@ module.exports = {
       HelveticaNowText_Medium: 'HelveticaNowText-Medium'
     }
   },
-  plugins: [
+  plugins: [  
     require('tailwindcss'),
-    require('autoprefixer'),
-  ],
+    require('autoprefixer'),],
 }
+

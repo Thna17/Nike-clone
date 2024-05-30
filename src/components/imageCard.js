@@ -4,7 +4,7 @@ class imageCard extends HTMLElement {
     }
     connectedCallback() {
         const imgUrl = this.getAttribute('img-url-bg');
-        const paragraph = this.getAttribute('paragraph') || '';
+        const paragraph = this.getAttribute('paragraph')  || '';
         const heading = this.getAttribute('heading') || '';
         const button = this.getAttribute('button') || 'Shop';
 
