@@ -24,7 +24,7 @@
         button="Shop summer Event"
     ></hero-component>
 
-    <div class="grid w-screen grid-cols-2 max-[600px]:grid-cols-1">
+    <div class="grid w-screen grid-cols-2 max-[600px]:grid-cols-1 mt-[42px]">
         <image-card
             img-url-bg="./assets/images/image-homepage/layout2-img1-homepage.webp"
             paragraph="Made for You. From Naomi."
@@ -46,15 +46,40 @@
             heading="Nike Zegama 2"
         ></image-card>
     </div>
-    <image-slider images='[
-    "/assets/images/image-homepage/layout4-img1-homepage.webp",
-    "/assets/images/image-homepage/layout4-img2-homepage.webp",
-    "/assets/images/image-homepage/layout4-img3-homepage.webp",
-    "/assets/images/image-homepage/layout4-img4-homepage.webp",
-    "/assets/images/image-homepage/layout4-img5-homepage.webp"
-]'></image-slider>
+    
+    <div class="w-screen mt-[84px] ">
+        <div class=" flex flex-col items-center mb-[42px]">
+            <div class="font-Futura text-[42px]">NEW THIS WEEK</div>
+            <div>
+                <div class="inline-block bg-black rounded-[20px] font-semibold py-1.5 px-4 text-white mt-6">Shop New Arrivals</div>
+            </div>
+        </div>
+        <div>
+            <img src="/assets/images/image-homepage/layout3-homepage.webp" alt="">
+        </div>
+    </div>
 
-    <div class="flex justify-center font-HelveticaNowText_Regular">
+    <div class="flex justify-center mt-[84px] mb-[42px] font-Futura">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[42px] ">SHOP BY CLASSICS</h2>
+        </div>
+    </div>
+    <div class="flex justify-center w-screen" >
+        <image-slider images='[
+            "/assets/images/image-women/layout4-img1-women.webp",
+            "/assets/images/image-women/layout4-img2-women.webp",
+            "/assets/images/image-women/layout4-img3-women.webp",
+            "/assets/images/image-women/layout4-img4-women.webp",
+            "/assets/images/image-women/layout4-img4-women.webp"
+        ]'></image-slider>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px] font-Futura">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[42px] ">NIKE MEMBERSHIP</h2>
+        </div>
+    </div>
+    <div class="flex justify-center font-HelveticaNowText_Regular mb-[84px]">
         <div class="flex w-[1920px] overflow-x-scroll gap-1">
             <div class="min-w-[500px] max-w-screen-2xl">
                 <image-card
