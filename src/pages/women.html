@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <script defer src="/src/components/imageSlider2.js" data-json="/json/women.json"></script>
+    <script defer src="/src/components/imageSlder3.js"></script>
+    <script src="/src/components/footer.js" defer></script>
+    <script src="/src/components/hero.js" defer></script>
+    <script src="/src/components/imageCard.js" defer></script>
+    <script src="/src/components/imageSlider1.js" defer></script>
+    <script src="/src/components/navbar.js" defer></script>
+</head>
+<body>
+    <div class="flex justify-center">
+        <component-navbar
+            homepageUrlPath="/index.html"
+            menUrlPath="./men.html"
+            kidsUrlPath="./kids.html"
+        ></component-navbar>
+    </div>
+
+    <div class="flex justify-center">
+       <div class="w-[1920px] mob:mx-[48px] mx-[24px]">
+        <hero-component
+            img-url-bg="/assets/images/image-women/layout1-img1-women.webp"
+            img-url-sm="/assets/images/image-women/layout1-img2-women.webp"
+            heading="FEEL SCULPTED "
+            paragraph="Made for all your water-based adventures."
+            button="Shop"
+        ></hero-component>
+       </div>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
+            <h2 class="text-[24px] ">Shop the Essentials</h2>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div class="w-full max-w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] overflow-x-scroll">
+            <div class="flex-shrink-0 min-w-[300px] max-w-[610px] w-full md:w-[calc(33.33%-10px)]">
+                <img src="/assets/images/image-women/layout2-img1-women.webp" alt="" class="w-full">
+                <div class="pt-[16px]">
+                    <h3 class="text-[20px]">Clothing</h3>
+                </div>
+            </div>
+            <div class="flex-shrink-0 min-w-[300px] max-w-[610px] w-full md:w-[calc(33.33%-10px)]">
+                <img src="/assets/images/image-women/layout2-img2-women.webp" alt="" class="w-full">
+                <div class="pt-[16px]">
+                    <h3 class="text-[20px]">Shoes</h3>
+                </div>
+            </div>
+            <div class="flex-shrink-0 min-w-[300px] max-w-[610px] w-full md:w-[calc(33.33%-10px)]">
+                <img src="/assets/images/image-women/layout2-img3-women.webp" alt="" class="w-full">
+                <div class="pt-[16px]">
+                    <h3 class="text-[20px]">Accessories</h3>
+                </div>
+            </div>
+            <div class="flex-shrink-0 min-w-[300px] max-w-[610px] w-full md:w-[calc(33.33%-10px)]">
+                <img src="/assets/images/image-women/layout2-img4-women.webp" alt="" class="w-full">
+                <div class="pt-[16px]">
+                    <h3 class="text-[20px]">Bras & Legging</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
+            <h2 class="text-[24px] ">Trending</h2>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div class="w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] max-[600px]:flex-col  ">
+            <image-card
+                img-url-bg="/assets/images/image-women/layout3-img1-women.webp"
+                paragraph="Just In"
+                heading="Air Max Dn"
+            ></image-card>
+            <image-card
+                img-url-bg="/assets/images/image-women/layout3-img2-women.webp"
+                paragraph="Make Your Move"
+                heading="New Fitness Essentials"
+            ></image-card>
+        </div>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
+            <h2 class="text-[24px] ">Classics Spotlight</h2>
+        </div>
+    </div>
+    <div class="flex justify-center w-screen" >
+        <image-slider images='[
+            "/assets/images/image-women/layout4-img1-women.webp",
+            "/assets/images/image-women/layout4-img2-women.webp",
+            "/assets/images/image-women/layout4-img3-women.webp",
+            "/assets/images/image-women/layout4-img4-women.webp",
+            "/assets/images/image-women/layout4-img4-women.webp"
+        ]'></image-slider>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
+            <h2 class="text-[24px] ">More to Explore</h2>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div id="dynamicComponentContainer" class="w-full max-w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] overflow-x-scroll"></div>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
+            <h2 class="text-[24px] ">Popular Right Now</h2>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div class="carousel w-full max-w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] overflow-x-scroll"></div>
+    </div>
+    
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
+            <h2 class="text-[24px] ">Nike Membership</h2>
+        </div>
+    </div>
+    <div class="flex  justify-center ">
+        <div class="w-[1920px] flex overflow-x-scroll gap-[10px] mob:mx-[48px] mx-[24px]">
+            <div class=" min-w-[300px] tab:min-w-[500px] dsk:min-w-[600px]">
+                <image-card
+                img-url-bg="/assets/images/image-women/layout7-img1-women.webp"
+                paragraph="Members Product"
+                heading="Your Excluesive Access"
+            ></image-card>
+            </div>
+
+            <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px] ">
+                <image-card
+                img-url-bg="/assets/images/image-women/layout7-img2-women.webp"
+                paragraph="Member rewards"
+                heading="How We Say Thank You"
+                button="Celebrate"
+            ></image-card>
+            </div>
+
+            <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px] ">
+                <image-card
+                img-url-bg="/assets/images/image-women/layout7-img3-women.webp"
+                paragraph="Sports & Wellness Apps"
+                heading="Movement Where You're At"
+                button="Move"
+            ></image-card>
+            </div>
+          
+          
+            <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px]">
+                <image-card
+                img-url-bg="/assets/images/image-women/layout7-img4-women.webp"
+                paragraph="Nike By You"
+                heading="Your Customization Service"
+                button="Customize"
+            ></image-card>
+            </div>
+
+            <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px]">
+                <image-card
+                img-url-bg="/assets/images/image-women/layout7-img5-women.webp"
+                paragraph="Nike By You"
+                heading="Your Ultimate <br> Sneaker Community"
+                button="Explore"
+            ></image-card>
+            </div>
+
+            <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px]">
+                <image-card
+                img-url-bg="/assets/images/image-women/layout7-img6-women.webp"
+                paragraph="Member Interests"
+                heading="Shop Your Way"
+                button="Add Interests"
+            ></image-card>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center mb-[42px] mt-[84px]">
+        <div class="flex w-[880px] justify-between font-HelveticaNowText_Medium mob:mx-[48px] mx-[24px] flex-col mob:flex-row">
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Shoes</li>
+            <li class="text-gray-500 mb-[16px] font-se max-[600px]:hidden">Running</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Basketball</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Golf</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Tennis Shoes</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Cltohing</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Tops & T-Shirts</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Jackets</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Hoodies</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Pants</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Gear</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">All Men's Gear</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Sock</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Bags & Backpack</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Balls</li>
+        </ul>
+        <ul>
+            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Featured</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">New Releases</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Clearance</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Metcon</li>
+            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">NFL</li>
+        </ul>
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+   
+
+</body>
+</html>
