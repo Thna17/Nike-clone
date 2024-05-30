@@ -672,6 +672,14 @@ video {
   margin-top: 84px;
 }
 
+.mb-\[84px\] {
+  margin-bottom: 84px;
+}
+
+.mt-\[42px\] {
+  margin-top: 42px;
+}
+
 .block {
   display: block;
 }
@@ -1042,6 +1050,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[42px\] {
+  font-size: 42px;
 }
 
 .font-black {
