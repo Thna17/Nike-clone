@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women</title>
     <link rel="stylesheet" href="../css/output.css">
-    <script src="/src/components/navbar.js"></script>
-    <script src="/src/components/hero.js"></script>
-    <script src="/src/components/image-card.js" defer></script>
-   <script src="/src/components/imageSlider.js"></script>
-
-
+    <script defer src="/src/components/imageSlider2.js" data-json="/json/women.json"></script>
+    <script defer src="/src/components/imageSlder3.js"></script>
+    <script src="/src/components/footer.js" defer></script>
+    <script src="/src/components/hero.js" defer></script>
+    <script src="/src/components/imageCard.js" defer></script>
+    <script src="/src/components/imageSlider1.js" defer></script>
+    <script src="/src/components/navbar.js" defer></script>
 </head>
 <body>
     
@@ -97,7 +98,30 @@
         ]'></image-slider>
     </div>
 
-    <div class="flex  justify-center mt-[84px]">
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[24px] ">More to Explore</h2>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div id="dynamicComponentContainer" class="w-full max-w-[1920px] flex gap-[10px] mx-[48px] overflow-x-scroll"></div>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[24px] ">Popular Right Now</h2>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <div class="carousel w-full max-w-[1920px] flex gap-[10px] mx-[48px] overflow-x-scroll"></div>
+    </div>
+    
+    <div class="flex justify-center mt-[84px] mb-[42px]">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[24px] ">Nike Membership</h2>
+        </div>
+    </div>
+    <div class="flex  justify-center ">
         <div class="w-[1920px] flex overflow-x-scroll gap-[10px] mx-[48px]">
             <div class=" min-w-[300px] tab:min-w-[500px] dsk:min-w-[600px]">
                 <image-card
@@ -161,5 +185,3 @@
 
 </body>
 </html>
-<img src="" alt="">
-
