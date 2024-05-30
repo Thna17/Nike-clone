@@ -15,18 +15,15 @@
     <script src="/src/js/humburger.js" defer></script>
 </head>
 <body>
-    <!-- Header section -->
-    <header class="flex justify-center">
-        <!-- Navbar component -->
-        <component-navbar
-            menUrlPath="./src/pages/men.html"
-            womenUrlPath="./src/pages/women.html"
-            kidsUrlPath="./src/pages/kids.html"
-        ></component-navbar>
-    </header>
-  
-    <!-- Hero section -->
-    <hero-component data-json="/json/hero1-homepage.json"></hero-component>
+    <component-navbar></component-navbar>
+
+	<hero-component
+        img-url-bg="./assets/images/image-homepage/layout1-homepage.webp"
+        img-url-sm="/assets/images/image-homepage/layout1-sm-homepage.webp"
+        heading="PLAY AT YOUR PEAK"
+        paragraph="From 5.20–5.24, shop fresh kicks, adventure essentials, and the best of <br> summer style—with exclusive rewards for Nike Members."
+        button="Shop summer Event"
+    ></hero-component>
 
     <!-- Section with image cards -->
     <section class="grid w-screen grid-cols-2 max-[600px]:grid-cols-1 mt-[42px]">
@@ -53,20 +50,41 @@
         ></image-card>
     </section>
     
-    <!-- Hero section -->
-    <section class="mt-[60px]">
-        <hero-component data-json="/json/hero2-homepage.json"></hero-component>
-    </section>
+    <div class="w-screen mt-[84px] ">
+        <div class=" flex flex-col items-center mb-[42px]">
+            <div class="font-Futura text-[42px]">NEW THIS WEEK</div>
+            <div>
+                <div class="inline-block bg-black rounded-[20px] font-semibold py-1.5 px-4 text-white mt-6">Shop New Arrivals</div>
+            </div>
+        </div>
+        <div>
+            <img src="/assets/images/image-homepage/layout3-homepage.webp" alt="">
+        </div>
+    </div>
 
-    <!-- NIKE MEMBERSHIP artical -->
-    <article class=" mb-[42px] mt-[84px] max-[600px]:text-left mx-[24px] tracking-wide ">
-        <h2 class="text-black text-[36px] min-[960px]:text-[56px] font-bold font-Futura text-wrap">NIKE MEMBERSHIP</h2>
-    </article>
-    <!-- NIKE MEMBERSHIP section -->
-    <section class="flex justify-center font-HelveticaNowText_Regular mb-[84px]">
-        <div class="flex w-[1920px] overflow-x-scroll gap-[10px]">
-            <!-- Image card components -->
-            <div class="min-w-[400px] max-w-[700px] w-[700px] tab:min-w-[300px] tab:max-w-screen-2xl">
+    <div class="flex justify-center mt-[84px] mb-[42px] font-Futura">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[42px] ">SHOP BY CLASSICS</h2>
+        </div>
+    </div>
+    <div class="flex justify-center w-screen" >
+        <image-slider images='[
+            "/assets/images/image-women/layout4-img1-women.webp",
+            "/assets/images/image-women/layout4-img2-women.webp",
+            "/assets/images/image-women/layout4-img3-women.webp",
+            "/assets/images/image-women/layout4-img4-women.webp",
+            "/assets/images/image-women/layout4-img4-women.webp"
+        ]'></image-slider>
+    </div>
+
+    <div class="flex justify-center mt-[84px] mb-[42px] font-Futura">
+        <div class="w-[1920px] ml-[48px]">
+            <h2 class="text-[42px] ">NIKE MEMBERSHIP</h2>
+        </div>
+    </div>
+    <div class="flex justify-center font-HelveticaNowText_Regular mb-[84px]">
+        <div class="flex w-[1920px] overflow-x-scroll gap-1">
+            <div class="min-w-[500px] max-w-screen-2xl">
                 <image-card
                 img-url-bg="./assets/images/image-homepage/layout5-img1-homepage.webp"
                 paragraph="Members Product"
@@ -90,12 +108,7 @@
                 ></image-card>
             </div>
         </div>
-    </section>
-
-    <!-- Category menu component -->
-    <category-menu data-json="/json/catogory-homepage.json"></category-menu>
-
-    <!-- Footer component -->
+    </div>
     <footer-component></footer-component>
 </body>
 </html>

@@ -5,50 +5,7 @@ class Navbar extends HTMLElement {
     }
 
     connectedCallback() {
-        // Define navigation paths
-        const homepagepath = this.getAttribute('homepageUrlPath');
-        const menPath = this.getAttribute('menUrlPath');
-        const womenPath = this.getAttribute('womenUrlPath');
-        const kidsPath = this.getAttribute('kidsUrlPath');
-
-        // Set the class attribute for styling
-        this.setAttribute('class', 'w-[1920px] flex flex-col HelveticaNowText-Medium font-black');
-        
-         // Define top navigation items
-        const navTopArr = [
-            { text: 'Find a Store' },
-            { text: '', imgSrc: '/assets/images/icons & logos/line.svg' },
-            { text: 'Help' },
-            { text: '', imgSrc: '/assets/images/icons & logos/line.svg' },
-            { text: 'Join Us' },
-            { text: '', imgSrc: '/assets/images/icons & logos/line.svg' },
-            { text: 'Sign In' }
-        ];
-
-        // Define bottom navigation items
-        const navDownArr = [
-            { name: 'New & Featured', path: '#' },
-            { name: 'Men', path: menPath },
-            { name: 'Women', path: womenPath },
-            { name: 'Kids', path: kidsPath },
-            { name: 'Jordan', path: '' },
-            { name: 'Shop', path: '' },
-        ];
-
-        // Generate HTML for bottom navigation
-        let navDown = '';
-        navDownArr.forEach(item => {
-            navDown += `<span class="px-3"><a href="${item.path}">${item.name}</a></span>`;
-        });
-
-        // Generate HTML for top navigation
-        const spanItemsHtml = navTopArr.map(item => 
-            item.imgSrc 
-                ? `<span class="px-2"><img src="${item.imgSrc}" alt=""></span>` 
-                : `<span class="px-2">${item.text}</span>`
-        ).join('');
-
-        // Set inner HTML for Navbar element
+        this.setAttribute('class', 'w-screen HelveticaNowText-Medium font-black')
         this.innerHTML = `
                 <!-- First navigation bar -->
                 <nav class="h-9 p-desktop flex justify-between items-center max-[960px]:hidden">
@@ -71,7 +28,12 @@ class Navbar extends HTMLElement {
                     </div>
                     <!-- Add menu items -->
                     <div class="w-full justify-center flex max-[960px]:hidden text-nowrap">
-                        ${navDown}
+                        <span class="px-3">New & Featured</span>
+                        <span class="px-3">Men</span>
+                        <span class="px-3">Women</span>
+                        <span class="px-3">Kids</span>
+                        <span class="px-3">Jordan</span>
+                        <span class="px-3">Sale</span>
                     </div>
                     <!-- Add search and other buttons -->
                     <div class="w-full flex justify-end">
