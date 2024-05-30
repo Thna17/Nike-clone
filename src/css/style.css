@@ -15,7 +15,6 @@
     font-family: HelveticaNowText-Regular ;
     src: url(../assets/fonts/HelveticaNowText-Regular.ttf);
 }
-
 body {
     font-family: HelveticaNowText-Regular;
     overflow-x: hidden;
@@ -39,6 +38,4 @@ h1 {
     h1 {
         font-size: 36px;
     }
-  
 }
-
