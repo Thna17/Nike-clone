@@ -564,9 +564,39 @@ video {
   }
 }
 
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
 @media (min-width: 960px) {
   .container {
     max-width: 960px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
   }
 }
 
@@ -708,6 +738,10 @@ video {
   height: 100%;
 }
 
+.min-h-\[400px\] {
+  min-height: 400px;
+}
+
 .w-\[1440px\] {
   width: 1440px;
 }
@@ -736,6 +770,10 @@ video {
   width: 100vw;
 }
 
+.min-w-\[250px\] {
+  min-width: 250px;
+}
+
 .min-w-\[300px\] {
   min-width: 300px;
 }
@@ -758,6 +796,10 @@ video {
 
 .max-w-\[700px\] {
   max-width: 700px;
+}
+
+.max-w-screen-2xl {
+  max-width: 1536px;
 }
 
 .flex-shrink-0 {
@@ -868,6 +910,11 @@ video {
   fill: none;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -959,6 +1006,10 @@ video {
   font-family: HelveticaNowText-Regular;
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -968,8 +1019,8 @@ video {
   font-size: 12px;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .text-\[20px\] {
@@ -1107,10 +1158,6 @@ h1 {
        object-fit: cover;
   }
 
-  h1 {
-    font-size: 36px;
-  }
-
   .max-\[960px\]\:hidden {
     display: none;
   }
@@ -1165,6 +1212,18 @@ h1 {
 
   .min-\[600px\]\:flex-col {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-\[calc\(33\.33\%-10px\)\] {
+    width: calc(33.33% - 10px);
   }
 }
 

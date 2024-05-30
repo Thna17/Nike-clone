@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", './src/components/*.js', "./src/pages/**/*.{html,js}"],
+  content: ["./index.html", './src/components/*.js',  "./src/pages/**/*.{html,js}"],
   theme: {
     extend: {
       textColor: {
@@ -40,6 +40,9 @@ module.exports = {
       screens: {
         'tablet' : '960px'
       },
+      screens: {
+        'tablet' : '960px'
+      },
       height: {
         '15' : '60px'
       },
@@ -47,16 +50,12 @@ module.exports = {
         tab: '960px',
         mob: '600px'
       },
+      fontFamily: {
+        Futura: 'Futura',
+        HelveticaNowText_Regular: 'HelveticaNowText-Regular',
+        HelveticaNowText_Medium: 'HelveticaNowText-Medium'
+      }
     },
-    screens: {
-      tab: '960px',
-      mob: '600px'
-    },
-    fontFamily: {
-      Futura: 'Futura',
-      HelveticaNowText_Regular: 'HelveticaNowText-Regular',
-      HelveticaNowText_Medium: 'HelveticaNowText-Medium'
-    }
   },
   plugins: [  
     require('tailwindcss'),
