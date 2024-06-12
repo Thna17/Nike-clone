@@ -1,0 +1,25 @@
+{
+    "items": [
+      {
+        "imgUrl": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_906,c_limit/dbe128f7-08de-4cd6-9a67-c5d6379f71f2/nike-kids-shoes-clothing-and-accessories-nike-com.jpg",
+        "title": "Big Kids",
+        "description": "Explore apparel (XS-XL) and shoes (3.5-7Y)"
+      },
+      {
+        "imgUrl": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_906,c_limit/8683d382-e97e-441b-a172-02e872d60cf3/nike-kids-shoes-clothing-and-accessories-nike-com.jpg",
+        "title": "Babies and Toddlers",
+        "description": "Explore apparel (OM-$T) and shoes (0C-10C)"
+      },
+      {
+        "imgUrl": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_906,c_limit/d7596a44-b299-4050-83af-b25707978070/nike-kids-shoes-clothing-and-accessories-nike-com.jpg",
+        "title": "Little Kids",
+        "description": "Explore apparel (4-7) and shoes (10.5C-3Y)"
+      },
+      {
+        "imgUrl": "https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_906,c_limit/b5ec764e-5a91-4879-90ee-ade08c70edae/nike-kids-shoes-clothing-and-accessories-nike-com.jpg",
+        "title": "Teen Essentials",
+        "description": "Explore apparel (XS-XL) and shoes (3.5-7Y)"
+      }
+    ]
+  }
+  

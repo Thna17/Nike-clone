@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Women's Shoes",
+        "items": ["All Women's Shoes", "Runnong", "Basketball", "Tennis"]
+    },
+    {
+        "title": "Women's Clothing",
+        "items": ["All Women's Clothing", "Plus Size", "Sports Bras", "Tops & T-Shirts"]
+    },
+    {
+        "title": "Women's Gear",
+        "items": ["Accessories", "Bags & Backpacks", "Hats & Headbands", "Gloves"]
+    },
+    {
+        "title": "Featured",
+        "items": ["Luxes Leggings", "Compare Sports Bras", "Indy Sport Bras", "Yoga"]
+    }
+]

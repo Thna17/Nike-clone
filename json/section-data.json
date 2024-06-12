@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "imgUrl": "/assets/images/image-women/layout2-img1-women.webp",
+            "alt": "Clothing image",
+            "title": "Clothing",
+            "button": ""
+        },
+        {
+            "imgUrl": "/assets/images/image-women/layout2-img2-women.webp",
+            "alt": "Shoes image",
+            "title": "Shoes",
+            "button": ""
+        },
+        {
+            "imgUrl": "/assets/images/image-women/layout2-img3-women.webp",
+            "alt": "Accessories image",
+            "title": "Accessories",
+            "button": ""
+        },
+        {
+            "imgUrl": "/assets/images/image-women/layout2-img4-women.webp",
+            "alt": "Bras & Legging image",
+            "title": "Bras & Legging",
+            "button": ""
+        }
+    ]
+}

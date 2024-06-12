@@ -1,0 +1,22 @@
+{
+    "items": [
+        {
+            "imgUrl": "/assets/images/kids-page/layout5-img1-women.webp",
+            "alt": "Clothing image",
+            "title": "Shoes $70 & Under",
+            "button": "Shop"
+        },
+        {
+            "imgUrl": "/assets/images/kids-page/layout5-img2-women.webp",
+            "alt": "Shoes image",
+            "title": "Graphiv Tee & Shorts",
+            "button": "Shop"
+        },
+        {
+            "imgUrl": "/assets/images/kids-page/layout5-img3-women.webp",
+            "alt": "Accessories image",
+            "title": "Easy On & Off shoes",
+            "button": "Shop"
+        }
+    ]
+}

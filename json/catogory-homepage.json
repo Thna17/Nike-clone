@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Featured",
+        "items": ["Air Force 1", "Jordan 1", "Meton", "Air Max 270"]
+    },
+    {
+        "title": "Shoes",
+        "items": ["All Shoes", "Jordan Shoes", "Running Shoes", "Basketball Shoes"]
+    },
+    {
+        "title": "Clothing",
+        "items": ["All Clothing", "Tops & T-Shirts", "Shorts", "Hoodies & Pullovers"]
+    },
+    {
+        "title": "Kids",
+        "items": ["Infant & Toddler Shoes", "Kids Shoes", "Kids Basketball Shoes", "Kids Running Shoes"]
+    }
+]

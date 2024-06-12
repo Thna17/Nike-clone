@@ -37,12 +37,6 @@ module.exports = {
         'desktop' : '0 38px 0 36px',
         'teblet' : '0 14px 0 16px'
       },
-      screens: {
-        'tablet' : '960px'
-      },
-      screens: {
-        'tablet' : '960px'
-      },
       height: {
         '15' : '60px'
       },
