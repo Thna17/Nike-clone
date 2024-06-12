@@ -5,33 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="./src/css/output.css">
-    <script src="/src/components/footer.js"></script>
-    <script src="/src/components/hero.js"></script>
-    <script src="/src/components/imageCard.js"></script>
-    <script src="/src/components/imageSlider1.js"></script>
-    <script src="/src/components/navbar.js"></script>
-
-
+    <script src="/src/components/hero.js" ></script>
+    <script src="/src/components/navbar.js" defer></script>
+    <script src="/src/components/footer.js" defer></script>
+    <script src="/src/components/imageCard.js" defer></script>
+    <script src="/src/components/imageSlider1.js" defer></script>
+    <script src="/src/components/test.js" defer></script>
+    <script src="/src/components/category.js" defer></script>
+    <script src="/src/js/humburger.js" defer></script>
 </head>
 <body>
 
-    <div class="flex justify-center">
-            <component-navbar
-                menUrlPath="./src/pages/men.html"
-                womenUrlPath="./src/pages/women.html"
-                kidsUrlPath="./src/pages/kids.html"
-            ></component-navbar>
-    </div>
-    <img src="" alt="">
-	<hero-component
-        img-url-bg="./assets/images/image-homepage/layout1-homepage.webp"
-        img-url-sm="/assets/images/image-homepage/layout1-sm-homepage.webp"
-        heading="PLAY AT YOUR PEAK"
-        paragraph="From 5.20–5.24, shop fresh kicks, adventure essentials, and the best of <br> summer style—with exclusive rewards for Nike Members."
-        button="Shop summer Event"
-    ></hero-component>
+    <header class="flex justify-center">
+        <component-navbar
+        menUrlPath="./src/pages/men.html"
+        womenUrlPath="./src/pages/women.html"
+        kidsUrlPath="./src/pages/kids.html"
+        ></component-navbar>
+    </header>
+  
+    <hero-component data-json="/json/hero1-homepage.json"></hero-component>
 
-    <div class="grid w-screen grid-cols-2 max-[600px]:grid-cols-1 mt-[42px]">
+    <section class="grid w-screen grid-cols-2 max-[600px]:grid-cols-1 mt-[42px]">
         <image-card
             img-url-bg="./assets/images/image-homepage/layout2-img1-homepage.webp"
             paragraph="Made for You. From Naomi."
@@ -52,50 +47,25 @@
             paragraph="Tame the Terrain"
             heading="Nike Zegama 2"
         ></image-card>
-    </div>
+    </section>
     
-    <div class="w-screen mt-[84px] ">
-        <div class=" flex flex-col items-center mb-[42px]">
-            <div class="font-Futura text-[42px]">NEW THIS WEEK</div>
-            <div>
-                <div class="inline-block bg-black rounded-[20px] font-semibold py-1.5 px-4 text-white mt-6">Shop New Arrivals</div>
-            </div>
-        </div>
-        <div>
-            <img src="/assets/images/image-homepage/layout3-homepage.webp" alt="">
-        </div>
-    </div>
+    <section class="mt-[60px]">
+        <hero-component data-json="/json/hero2-homepage.json"></hero-component>
+    </section>
 
-    <div class="flex justify-center mt-[84px] mb-[42px] font-Futura">
-        <div class="w-[1920px] ml-[48px]">
-            <h2 class="text-[42px] ">SHOP BY CLASSICS</h2>
-        </div>
-    </div>
-    <div class="flex justify-center w-screen" >
-        <image-slider images='[
-            "/assets/images/image-women/layout4-img1-women.webp",
-            "/assets/images/image-women/layout4-img2-women.webp",
-            "/assets/images/image-women/layout4-img3-women.webp",
-            "/assets/images/image-women/layout4-img4-women.webp",
-            "/assets/images/image-women/layout4-img4-women.webp"
-        ]'></image-slider>
-    </div>
-
-    <div class="flex justify-center mt-[84px] font-Futura">
-        <div class="w-[1920px] ml-[48px]">
-            <h2 class="text-[42px] ">NIKE MEMBERSHIP</h2>
-        </div>
-    </div>
-    <div class="flex justify-center font-HelveticaNowText_Regular mb-[84px]">
-        <div class="flex w-[1920px] overflow-x-scroll gap-1">
-            <div class="min-w-[500px] max-w-screen-2xl">
+    <article class=" mb-[42px] mt-[84px] max-[600px]:text-left mx-[24px] tracking-wide ">
+        <h2 class="text-black text-[36px] min-[960px]:text-[56px] font-bold font-Futura text-wrap">NIKE MEMBERSHIP</h2>
+    </article>
+    <section class="flex justify-center font-HelveticaNowText_Regular mb-[84px]">
+        <div class="flex w-[1920px] overflow-x-scroll gap-[10px]">
+            <div class="min-w-[400px] max-w-[700px]  w-[700px] tab:min-w-[300px] tab:max-w-screen-2xl">
                 <image-card
                 img-url-bg="./assets/images/image-homepage/layout5-img1-homepage.webp"
                 paragraph="Members Product"
                 heading="Your Excluesive"
                 ></image-card>
             </div>
-            <div class="min-w-[500px] max-w-screen-2xl">
+            <div class=" min-w-[400px] max-w-[700px] w-[700px]  tab:min-w-[300px] tab:max-w-screen-2xl">
                 <image-card
                 img-url-bg="./assets/images/image-homepage/layout5-img2-homepage.webp"
                 paragraph="Sports & Wellness Apps"
@@ -103,7 +73,7 @@
                 button="Move"
                 ></image-card>
             </div>
-            <div class="min-w-[500px] max-w-screen-2xl">
+            <div class="min-w-[400px] max-w-[700px]  w-[700px] tab:min-w-[300px] tab:max-w-screen-2xl">
                 <image-card
                 img-url-bg="./assets/images/image-homepage/layout5-img3-homepage.webp"
                 paragraph="Nike By You"
@@ -112,40 +82,9 @@
                 ></image-card>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="flex justify-center mb-[42px] mt-[84px]">
-        <div class="flex w-[880px] justify-between font-HelveticaNowText_Medium mx-[42px] flex-col mob:flex-row">
-        <ul>
-            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Shoes</li>
-            <li class="text-gray-500 mb-[16px] font-se max-[600px]:hidden">Running</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Basketball</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Golf</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Tennis Shoes</li>
-        </ul>
-        <ul>
-            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Cltohing</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Tops & T-Shirts</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Jackets</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Hoodies</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Pants</li>
-        </ul>
-        <ul>
-            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Men's Gear</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">All Men's Gear</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Sock</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Bags & Backpack</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Balls</li>
-        </ul>
-        <ul>
-            <li class="text-[20px] font-HelveticaNowText_Regular mb-[24px]">Featured</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">New Releases</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Clearance</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">Metcon</li>
-            <li class="text-gray-500 mb-[16px] max-[600px]:hidden">NFL</li>
-        </ul>
-        </div>
-    </div>
+    <category-menu data-json="/json/catogory-homepage.json"></category-menu>
 
     <footer-component></footer-component>
 

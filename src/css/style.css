@@ -27,6 +27,9 @@ body {
         font-size: 75px;
         letter-spacing: -6px;
     }
+    .hidden {
+        display: none;
+    }
 }
 h1 {
     font-family: Futura;
@@ -39,4 +42,7 @@ h1 {
         font-size: 36px;
     }
   
+}
+.hidden {
+    display: none;
 }

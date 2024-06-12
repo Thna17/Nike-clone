@@ -1,0 +1,64 @@
+{
+    "products": [
+        {
+            "imgSrc": "/assets/images/image-women/image1-slider3.webp",
+            "title": "Air Jordan 1 Retro High OG \"Latte\"",
+            "subtitle": "Women's Shoes",
+            "price": "$180"
+        },
+        {
+            "imgSrc": "/assets/images/image-women/image2-slider3.webp",
+            "title": "Nike Free Metcon 5",
+            "subtitle": "Women's Shoes",
+            "price": "$180"
+        },
+        {
+            "imgSrc": "/assets/images/image-women/image3-slider3.webp",
+            "title": "Nike Motiva",
+            "subtitle": "Women's Shoes",
+            "price": "$180"
+        },
+        {
+            "imgSrc": "/assets/images/image-women/image4-slider3.webp",
+            "title": "Nike Air VaporMax Plus",
+            "subtitle": "Women's Shoes",
+            "price": "$180"
+        },
+        {
+            "imgSrc": "/assets/images/image-women/image5-slider3.webp",
+            "title": "Nike Air Max 90 LV8",
+            "subtitle": "Women's Shoes",
+            "price": "$180"
+        },
+        {
+            "imgSrc": "/assets/images/image-women/image6-slider3.webp",
+            "title": "Nike Killshot 2",
+            "subtitle": "Women's Shoes",
+            "price": "$180"
+        },
+        {
+            "imgSrc": "/assets/images/image-women/image7-slider3.webp",
+            "title": "Nike Invincible 3",
+            "subtitle": "Women's Shoes",
+            "price": "$180"
+        },
+        {
+            "imgSrc": "/assets/images/image-women/image8-slider3.png",
+            "title": "Nike V2K Run",
+            "subtitle": "Women's Shoes",
+            "price": "$180"
+        },
+        {
+            "imgSrc": "/assets/images/image-women/image9-slider3.webp",
+            "title": "Nike Gamma Force",
+            "subtitle": "Women's Shoes",
+            "price": "$180"
+        },
+        {
+            "imgSrc": "/assets/images/image-women/image10-slider3.webp",
+            "title": "Nike Vaporfly 3",
+            "subtitle": "Women's Shoes",
+            "price": "$180"
+        }
+    ]
+}

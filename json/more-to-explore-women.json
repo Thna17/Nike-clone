@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "imgUrl": "/assets/images/image-women/layout5-img1-women.webp",
+            "alt": "Clothing image",
+            "title": "Haley Jones's Picks",
+            "button": "Shop"
+        },
+        {
+            "imgUrl": "/assets/images/image-women/layout5-img2-women.webp",
+            "alt": "Shoes image",
+            "title": "Spring Violets",
+            "button": "Shop"
+        },
+        {
+            "imgUrl": "/assets/images/image-women/layout5-img3-women.webp",
+            "alt": "Accessories image",
+            "title": "Hit the Trail Running",
+            "button": "Shop"
+        },
+        {
+            "imgUrl": "/assets/images/image-women/layout5-img4-women.webp",
+            "alt": "Bras & Legging image",
+            "title": "Nike Motiva",
+            "button": "Shop"
+        }
+    ]
+}

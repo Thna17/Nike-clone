@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Kids's Shoes",
+        "items": ["$70 & Under", "Easy On & Off", "Jordan", "Basketball"]
+    },
+    {
+        "title": "Kids's Clothing",
+        "items": ["Joggers & Sweatpants", "Swimwear", "Jackets & Vests", "T-Shirts & Tops"]
+    },
+    {
+        "title": "Kids's Gear",
+        "items": ["All Kids' Gear", "Backpacks & Bags", "Gloves", "Hats & Headbands"]
+    },
+    {
+        "title": "Featured",
+        "items": ["All Kids' Products", "Baby & Toddler", "Pre-School", "Grade School"]
+    }
+]
