@@ -15,7 +15,9 @@
     <script src="/src/js/humburger.js" defer></script>
 </head>
 <body>
+    <!-- Header -->
     <header class="flex justify-center">
+        <!-- Navbar component -->
         <component-navbar 
             homepageUrlPath="/index.html"
             womenUrlPath="./women.html"
@@ -23,22 +25,27 @@
         ></component-navbar>
     </header>
         
+    <!-- Hero section -->
     <hero-component data-json="/json/men.json"></hero-component>
    
+    <!-- Sizes for All artical -->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px]">Sizes for All</h2>
         </div>
     </article>
+    <!-- Sizes for All section -->
     <section class="justify-center flex  ">
         <div class="w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] flex-col mob:flex-row ">
             <div class=" min-w-[250px] min-h-[400px] ">
+                <!-- Image card component -->
                 <image-card
                     img-url-bg="/assets/images/image-men/layout2-img1-men.webp"
                     heading="Ja'Marr's <br> Off-Field Favs"
                 ></image-card>
             </div>
             <div class=" min-w-[250px] min-h-[400px] ">
+                <!-- Image card component -->
                 <image-card
                     img-url-bg="/assets/images/image-men/layout2-img2-men.webp"
                     heading="Ja'Marr's <br> Off-Season Selects"
@@ -47,39 +54,46 @@
         </div>
     </section>
 
+    <!-- More to Explore article -->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">More to Explore</h2>
         </div>
     </article>
 
+    <!-- More to Explore component -->
     <more-to-explore-men></more-to-explore-men>
     
+    <!-- Member Benefits component -->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
-            <h2 class="text-[24px] ">Member Benifits</h2>
+            <h2 class="text-[24px] ">Member Benefits</h2>
         </div>
     </article>
+    <!-- Member Benefits component -->
     <section class="flex  justify-center">
         <div class="w-[1920px] flex overflow-x-scroll gap-[10px] mob:mx-[48px] mx-[24px]">
             <div class=" min-w-[300px] tab:min-w-[500px] dsk:min-w-[600px]">
+                <!-- Image card component -->
                 <image-card
                 img-url-bg="/assets/images/image-men/layout7-img1-men.webp"
                 paragraph="Members Product"
-                heading="Your Excluesive Access"
+                heading="Your Exclusive Access"
                 ></image-card>
             </div>
 
             <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px] ">
+                <!-- Image card component -->
                 <image-card
                 img-url-bg="/assets/images/image-men/layout7-img2-men.webp"
-                paragraph="Member rewards"
+                paragraph="Member Rewards"
                 heading="How We Say Thank You"
                 button="Celebrate"
                 ></image-card>
             </div>
 
             <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px] ">
+                <!-- Image card component -->
                 <image-card
                 img-url-bg="/assets/images/image-men/layout7-img3-men.webp"
                 paragraph="Sports & Wellness Apps"
@@ -89,6 +103,7 @@
             </div>
           
             <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px]">
+                <!-- Image card component -->
                 <image-card
                 img-url-bg="/assets/images/image-men/layout7-img4-men.webp"
                 paragraph="Nike By You"
@@ -98,6 +113,7 @@
             </div>
 
             <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px]">
+                <!-- Image card component -->
                 <image-card
                 img-url-bg="/assets/images/image-men/layout7-img5-men.webp"
                 paragraph="Nike By You"
@@ -107,6 +123,7 @@
             </div>
 
             <div class="  min-w-[300px] tab:min-w-[450px] dsk:min-w-[600px]">
+                <!-- Image card component -->
                 <image-card
                 img-url-bg="/assets/images/image-men/layout7-img6-men.webp"
                 paragraph="Member Interests"
@@ -117,11 +134,11 @@
         </div>
     </section>
 
+    <!-- Category menu component -->
     <category-menu data-json="/json/category-men.json"></category-menu>
 
+    <!-- Footer component -->
     <footer-component></footer-component>
             
 </body>
 </html>
-
-

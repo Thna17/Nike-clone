@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women</title>
     <link rel="stylesheet" href="../css/output.css">
     <script defer src="/src/components/imageSlider2.js" data-json="/json/women.json"></script>
     <script defer src="/src/components/imageSlder3.js"></script>
@@ -18,7 +17,9 @@
     
 </head>
 <body>
+    <!-- Header -->
     <header class="flex justify-center">
+        <!-- Navbar component -->
         <component-navbar
             homepageUrlPath="/index.html"
             menUrlPath="./men.html"
@@ -26,32 +27,40 @@
         ></component-navbar>
     </header>
 
+    <!-- Section for hero component -->
     <section class="flex justify-center tracking-wider">
        <div class="w-[1920px] mob:mx-[48px] mx-[24px]">
+            <!-- Hero component -->
             <hero-component data-json="/json/hero-women.json"></hero-component>
        </div>
     </section>
 
+    <!-- Shop the Essentials artical -->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Shop the Essentials</h2>
         </div>
     </article>
 
+    <!-- Shop the Essentials component -->
     <image-silde4 data-json="/json/section-data.json"></image-silde4>
 
+    <!-- Trending artical -->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Trending</h2>
         </div>
     </article>
+    <!-- Trending section -->
     <section class="flex justify-center">
         <div class="w-[1920px] flex gap-[10px] mob:mx-[48px] mx-[24px] max-[600px]:flex-col  ">
+            <!-- Image card component -->
             <image-card
                 img-url-bg="/assets/images/image-women/layout3-img1-women.webp"
                 paragraph="Just In"
                 heading="Air Max Dn"
             ></image-card>
+            <!-- Image card component -->
             <image-card
                 img-url-bg="/assets/images/image-women/layout3-img2-women.webp"
                 paragraph="Make Your Move"
@@ -60,30 +69,35 @@
         </div>
     </section>
 
+    <!-- More to Explore artical-->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">More to Explore</h2>
         </div>
     </article>
+    <!-- More to Explore component-->
     <image-silde4 data-json="/json/more-to-explore-women.json"></image-silde4>
  
 
-
+    <!-- Popular Right Now artical-->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Popular Right Now</h2>
         </div>
     </article>
+    <!-- Popular Right Now component -->
     <section class="w-screen min-[1680px]:flex justify-center ">
         <product-carousel data-json="/json/products-kid.json"></product-carousel>
     </section>
     
     
+    <!-- Nike Membership artical -->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Nike Membership</h2>
         </div>
     </article>
+    <!-- Nike Membership section -->
     <section class="flex  justify-center ">
         <div class="w-[1920px] flex overflow-x-scroll gap-[10px] mob:mx-[48px] mx-[24px]">
             <div class=" min-w-[300px] tab:min-w-[500px] dsk:min-w-[600px]">
@@ -141,8 +155,10 @@
         </div>
     </section>
 
+     <!-- Category menu component -->
     <category-menu data-json="/json/category-women.json"></category-menu>
 
+    <!-- Footer component -->
     <footer-component></footer-component>
    
 </body>

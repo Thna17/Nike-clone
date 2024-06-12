@@ -2,7 +2,9 @@ class menGrid extends HTMLElement {
     constructor() {
         super();
     }
+    // Function to be executed when the element is connected to the DOM
     connectedCallback() {
+        // Set the inner HTML of the element to the following markup
         this.innerHTML = `
         <section class=" flex justify-center">
         <div class=" flex w-[1920px]  mob:mx-[48px] mx-[24px] flex-col mob:flex-row  gap-[10px] font-HelveticaNowText_Regular">
@@ -43,4 +45,5 @@ class menGrid extends HTMLElement {
         `
     }
 }
+// Define the custom element 'more-to-explore-men' with the MenGrid class
 customElements.define('more-to-explore-men', menGrid)

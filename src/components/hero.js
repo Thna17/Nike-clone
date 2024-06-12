@@ -1,20 +1,25 @@
+// Define a custom element called Hero
 class Hero extends HTMLElement {
     constructor() {
         super();
     }
     
+    // Function to be executed when the element is connected to the DOM
     connectedCallback() {
-        // Get the JSON file path from the attribute
+        // Get the JSON file path from the attribute, set a default path if not provided
         const jsonFilePath = this.getAttribute('data-json') || '/json/homepage.json';
 
         // Fetch JSON data
         fetch(jsonFilePath)
             .then(response => response.json())
             .then(data => {
+                // Destructure data object
                 const { imgUrlBg, imgUrlSm, heading, paragraph, button, reverse } = data;
-                this.setAttribute('class', 'flex justify-center w-full ');
+
+                // Set class and HTML content for the Hero component
+                this.setAttribute('class', 'flex justify-center w-full');
                 this.innerHTML = `
-                    <a href="" class=" w-full  ${reverse}">
+                    <a href="" class="w-full ${reverse}">
                         <div class="w-full">
                             <img src="${imgUrlBg}" alt="" class="h-full w-full max-[600px]:hidden">
                             <img src="${imgUrlSm}" alt="" class="w-full h-full min-[600px]:hidden">
@@ -31,4 +36,5 @@ class Hero extends HTMLElement {
     }
 }
 
+// Define the custom element 'hero-component' with the Hero class
 customElements.define('hero-component', Hero);

@@ -9,14 +9,16 @@
     <script src="/src/components/hero.js" defer></script>
     <script src="/src/components/imageCard.js" defer></script>
     <script src="/src/components/navbar.js" defer></script>
-    <script src="/src/components/imageSlder3.js"defer></script>
-    <script src="/src/components/imageSlider4.js"defer></script>
-    <script src="/src/components/kidsGrid.js"defer></script>
-    <script src="/src/components/category.js"defer></script>
+    <script src="/src/components/imageSlder3.js" defer></script>
+    <script src="/src/components/imageSlider4.js" defer></script>
+    <script src="/src/components/kidsGrid.js" defer></script>
+    <script src="/src/components/category.js" defer></script>
     <script src="/src/js/humburger.js"></script>
 </head>
 <body>
+    <!-- Header -->
     <header class="flex justify-center">
+        <!-- Navbar component -->
         <component-navbar
             homepageUrlPath="/index.html"
             menUrlPath="./men.html"
@@ -24,37 +26,45 @@
         ></component-navbar>
     </header>
 
+    <!-- Hero section -->
     <section class="flex justify-center">
        <div class="w-[1920px] mob:mx-[48px] mx-[24px]">
+        <!-- Hero component -->
         <hero-component data-json="/json/hero-kids.json"></hero-component>
        </div>
     </section>
 
+    <!-- Size for All article-->
     <article class="flex justify-center mt-[42px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Size for All</h2>
         </div>
     </article>
-
+    <!-- Size for All component -->
     <kids-section data-json="/json/kids-grid.json"></kids-section>
 
+    <!-- Popular Right Now article -->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Popular Right Now</h2>
         </div>
     </article>
+    <!-- Popular Right Now component -->
     <section class="w-screen min-[1680px]:flex justify-center ">
         <product-carousel data-json="/json/products-kid.json"></product-carousel>
     </section>
 
+    <!-- Trending artical -->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">Trending</h2>
         </div>
     </article>
+    <!-- Trending section-->
     <section class="flex justify-center ">
         <div class="w-[1920px] flex mob:mx-[48px] mx-[24px] gap-[10px] flex-col mob:flex-row">
             <div class="w-full">
+                <!-- Image card component -->
                 <image-card
                 img-url-bg="/assets/images/kids-page/layout4-img1-women.webp"
                 paragraph="Fresh New Colors"
@@ -62,6 +72,7 @@
                 ></image-card>
             </div>
             <div class="w-full">
+                <!-- Image card component -->
                 <image-card
                 img-url-bg="/assets/images/kids-page/layout4-img2-women.webp"
                 paragraph="New in Skate"
@@ -71,15 +82,19 @@
         </div>
     </section>
 
+    <!-- More to Explore artical -->
     <article class="flex justify-center mt-[84px] mb-[42px]">
         <div class="w-[1920px] mob:ml-[48px] ml-[24px]">
             <h2 class="text-[24px] ">More to Explore</h2>
         </div>
     </article>
+    <!-- More to Explore component -->
     <image-silde4 data-json="/json/more-to-explore-kids.json"></image-silde4>
 
+    <!-- Category menu component -->
     <category-menu data-json="/json/category-kids.json"></category-menu>
     
+    <!-- Footer component -->
     <footer-component></footer-component>
   
 </body>
