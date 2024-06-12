@@ -298,9 +298,7 @@ Certainly! Consistent file naming conventions can greatly improve project organi
 
 ### Information Architecture
 [Figma IA - Thna Nike](https://www.figma.com/board/8OuohLlEBgCQVp9y6bT9vM/Thna-nike?node-id=0-1&t=0SGXujWzv5fXI4fZ-1)
-
 Check out my Nike Clone website [here](https://nike-clone-psi.vercel.app/).
-
 
 
 **Name**: Hong Than Brathna  
