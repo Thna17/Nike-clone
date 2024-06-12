@@ -5,12 +5,16 @@ class Navbar extends HTMLElement {
     }
 
     connectedCallback() {
+        // Define navigation paths
         const homepagepath = this.getAttribute('homepageUrlPath');
         const menPath = this.getAttribute('menUrlPath');
         const womenPath = this.getAttribute('womenUrlPath');
         const kidsPath = this.getAttribute('kidsUrlPath');
+
+        // Set the class attribute for styling
         this.setAttribute('class', 'w-[1920px] flex flex-col HelveticaNowText-Medium font-black');
         
+         // Define top navigation items
         const navTopArr = [
             { text: 'Find a Store' },
             { text: '', imgSrc: '/assets/images/icons & logos/line.svg' },
@@ -20,6 +24,8 @@ class Navbar extends HTMLElement {
             { text: '', imgSrc: '/assets/images/icons & logos/line.svg' },
             { text: 'Sign In' }
         ];
+
+        // Define bottom navigation items
         const navDownArr = [
             { name: 'New & Featured', path: '#' },
             { name: 'Men', path: menPath },
@@ -29,16 +35,20 @@ class Navbar extends HTMLElement {
             { name: 'Shop', path: '' },
         ];
 
+        // Generate HTML for bottom navigation
         let navDown = '';
         navDownArr.forEach(item => {
             navDown += `<span class="px-3"><a href="${item.path}">${item.name}</a></span>`;
         });
 
+        // Generate HTML for top navigation
         const spanItemsHtml = navTopArr.map(item => 
             item.imgSrc 
                 ? `<span class="px-2"><img src="${item.imgSrc}" alt=""></span>` 
                 : `<span class="px-2">${item.text}</span>`
         ).join('');
+
+        // Set inner HTML for Navbar element
         this.innerHTML = `
                 <!-- First navigation bar -->
                 <nav class="h-9 p-desktop flex justify-between items-center max-[960px]:hidden">
@@ -160,5 +170,5 @@ class Navbar extends HTMLElement {
         `;
     }
 }
-
+// Define custom element
 customElements.define('component-navbar', Navbar);

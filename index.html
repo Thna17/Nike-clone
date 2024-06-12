@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="./src/css/output.css">
-    <script src="/src/components/hero.js" ></script>
+    <script src="/src/components/hero.js"></script>
     <script src="/src/components/navbar.js" defer></script>
     <script src="/src/components/footer.js" defer></script>
     <script src="/src/components/imageCard.js" defer></script>
@@ -15,18 +15,22 @@
     <script src="/src/js/humburger.js" defer></script>
 </head>
 <body>
-
+    <!-- Header section -->
     <header class="flex justify-center">
+        <!-- Navbar component -->
         <component-navbar
-        menUrlPath="./src/pages/men.html"
-        womenUrlPath="./src/pages/women.html"
-        kidsUrlPath="./src/pages/kids.html"
+            menUrlPath="./src/pages/men.html"
+            womenUrlPath="./src/pages/women.html"
+            kidsUrlPath="./src/pages/kids.html"
         ></component-navbar>
     </header>
   
+    <!-- Hero section -->
     <hero-component data-json="/json/hero1-homepage.json"></hero-component>
 
+    <!-- Section with image cards -->
     <section class="grid w-screen grid-cols-2 max-[600px]:grid-cols-1 mt-[42px]">
+        <!-- Image card components -->
         <image-card
             img-url-bg="./assets/images/image-homepage/layout2-img1-homepage.webp"
             paragraph="Made for You. From Naomi."
@@ -49,23 +53,27 @@
         ></image-card>
     </section>
     
+    <!-- Hero section -->
     <section class="mt-[60px]">
         <hero-component data-json="/json/hero2-homepage.json"></hero-component>
     </section>
 
+    <!-- NIKE MEMBERSHIP artical -->
     <article class=" mb-[42px] mt-[84px] max-[600px]:text-left mx-[24px] tracking-wide ">
         <h2 class="text-black text-[36px] min-[960px]:text-[56px] font-bold font-Futura text-wrap">NIKE MEMBERSHIP</h2>
     </article>
+    <!-- NIKE MEMBERSHIP section -->
     <section class="flex justify-center font-HelveticaNowText_Regular mb-[84px]">
         <div class="flex w-[1920px] overflow-x-scroll gap-[10px]">
-            <div class="min-w-[400px] max-w-[700px]  w-[700px] tab:min-w-[300px] tab:max-w-screen-2xl">
+            <!-- Image card components -->
+            <div class="min-w-[400px] max-w-[700px] w-[700px] tab:min-w-[300px] tab:max-w-screen-2xl">
                 <image-card
                 img-url-bg="./assets/images/image-homepage/layout5-img1-homepage.webp"
                 paragraph="Members Product"
-                heading="Your Excluesive"
+                heading="Your Exclusive"
                 ></image-card>
             </div>
-            <div class=" min-w-[400px] max-w-[700px] w-[700px]  tab:min-w-[300px] tab:max-w-screen-2xl">
+            <div class=" min-w-[400px] max-w-[700px] w-[700px] tab:min-w-[300px] tab:max-w-screen-2xl">
                 <image-card
                 img-url-bg="./assets/images/image-homepage/layout5-img2-homepage.webp"
                 paragraph="Sports & Wellness Apps"
@@ -73,7 +81,7 @@
                 button="Move"
                 ></image-card>
             </div>
-            <div class="min-w-[400px] max-w-[700px]  w-[700px] tab:min-w-[300px] tab:max-w-screen-2xl">
+            <div class="min-w-[400px] max-w-[700px] w-[700px] tab:min-w-[300px] tab:max-w-screen-2xl">
                 <image-card
                 img-url-bg="./assets/images/image-homepage/layout5-img3-homepage.webp"
                 paragraph="Nike By You"
@@ -84,10 +92,10 @@
         </div>
     </section>
 
+    <!-- Category menu component -->
     <category-menu data-json="/json/catogory-homepage.json"></category-menu>
 
+    <!-- Footer component -->
     <footer-component></footer-component>
-
-   
 </body>
 </html>

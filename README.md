@@ -78,29 +78,23 @@ project-root/
 │   └── videos/
 │       └── (video files)
 │
-├── css/
-│   └── styles.css
-│
-├── js/
-│   └── script.js
-│
-├── components/
-│   ├── header/
-│   │   ├── header.html
-│   │   └── header.css
-│   │
-│   ├── footer/
-│   │   ├── footer.html
-│   │   └── footer.css
-│   │
+│──src/
+│   ├── components/
+│   │   └──imageCard.js
+│   ├── css/
+│   │   ├── styles.css
+│   │   └── output.css
+│   ├── js/
+│   │   └── script.js
+│   └── pages/
+│       ├── index.html
+│       ├── about.html
+│       ├── contact.html
+│       └── ...
+├── json/
+│   ├── product.json
+│   ├── hero.json
 │   └── ...
-│
-├── pages/
-│   ├── index.html
-│   ├── about.html
-│   ├── contact.html
-│   └── ...
-│
 ├── .gitignore
 ├── package.json
 ├── README.md
@@ -114,7 +108,7 @@ project-root/
 - **src/**: Contains all the source code for the website.
   - **assets/**: Stores images and styles.
     - **images/**: Directory for images..
-- **components/**: Directory for Vue components.
+- **components/**: Directory for components.
     - **Header/**: Contains header component files.
         - **header.js**: JavaScript file related to the header.
     - **Footer/**: Contains footer component files.
@@ -123,6 +117,78 @@ project-root/
     - **Home/**: Contains the Home page component.
     - **Product/**: Contains the Product page component.
 - **tailwind.config.js**: Configuration file for Tailwind CSS.
+Certainly! Consistent file naming conventions can greatly improve project organization and readability. Here's a suggested file naming convention for your project:
+
+### File Naming Convention:
+
+1. **HTML Files**:
+   - Use lowercase letters.
+   - Separate words with hyphens.
+   ```plaintext
+   homepage.html
+   about-us.html
+   contact-form.html
+   ```
+
+2. **CSS Files**:
+   - Use lowercase letters.
+   - Separate words with hyphens.
+   ```plaintext
+   styles.css
+   layout-styles.css
+   navigation.css
+   ```
+
+3. **JavaScript Files**:
+   - Use lowercase letters.
+   - Separate words with hyphens.
+   ```plaintext
+   script.js
+   form-validation.js
+   carousel-slider.js
+   ```
+
+4. **Image Files**:
+   - Use lowercase letters.
+   - Avoid spaces or special characters.
+   ```plaintext
+   logo.png
+   background-image.jpg
+   icon.svg
+   ```
+
+
+5. **JSON Files**:
+   - Use lowercase letters.
+   - Separate words with hyphens.
+   ```plaintext
+   product-data.json
+   configuration-settings.json
+   ```
+
+6. **README File**:
+   - Use all uppercase letters.
+   ```plaintext
+   README.md
+   ```
+
+7. **Folder Names**:
+   - Use lowercase letters.
+   - Separate words with hyphens.
+   ```plaintext
+   images/
+   css/
+   js/
+   ```
+
+
+8. **Component Files (JavaScript)**:
+    - Use lowercase letters.
+    - Separate words with hyphens.
+    ```plaintext
+    header-component.js
+    footer-component.js
+    ```
 
 ## Style Guides
 
@@ -151,7 +217,62 @@ project-root/
 - **JavaScript**: camelCase for variable and function names.
 - **HTML and CSS**: kebab-case for class and ID names.
 
+
+### Comment Rule:
+
+
+1. **HTML Comments**:
+   - Use comments to explain the purpose of significant sections of the HTML structure.
+   ```html
+   <!-- Main navigation bar -->
+   <nav>
+       <!-- Navigation items here -->
+   </nav>
+   ```
+
+2. **CSS Comments**:
+   - Use comments to group related styles and explain non-obvious style choices.
+   ```css
+   /* Navigation Styles */
+   nav {
+       background-color: #000;
+       color: #fff;
+   }
+
+   /* Specific style for mobile view */
+   @media (max-width: 768px) {
+       nav {
+           /* Adjustments for smaller screens */
+       }
+   }
+   ```
+
+3. **JavaScript Comments**:
+   - Use single-line comments to explain variables and complex logic.
+   - Use block comments to describe the purpose of functions and modules.
+   ```javascript
+   // Variable to store the user session data
+   let userSession = {};
+
+   /**
+    * Function to initialize the application
+    */
+   function initializeApp() {
+       // Code to initialize the app
+   }
+   ```
+
+4. **Component Comments**:
+   - In component-based development, use comments to describe the purpose and usage of each component.
+   ```javascript
+   // Header component: displays the main navigation and logo
+   function Header() {
+       // Component logic here
+   }
+   ```
+
 ## Version Control
+![Diagram](./assets/images/git flow diagram.png")
 
 ### Issue Naming Convention:
 - **Issue Naming**: The issue name should be followed by a description of the issue at hand.
@@ -170,5 +291,12 @@ project-root/
 
 ---
 
+## Design Reference
+
+### Figma Design 
+[Figma Design - Nike.com](https://www.figma.com/design/WAdVLyQNdt7vA8YCE1Hl6I/Nike.com?node-id=0-1&t=FUAT8sv7UbFe19ti-1)
+### Information Architecture
+[Figma IA - Thna Nike](https://www.figma.com/board/8OuohLlEBgCQVp9y6bT9vM/Thna-nike?node-id=0-1&t=0SGXujWzv5fXI4fZ-1)
+
+
 **Name**: Hong Than Brathna  
-**Created Date**: May 15, 2024

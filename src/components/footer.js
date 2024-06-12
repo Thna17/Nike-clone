@@ -3,8 +3,11 @@ class FooterComponent extends HTMLElement {
       super();
   }
   
+  // Function to be executed when the element is connected to the DOM
   connectedCallback() {
       this.setAttribute('class', 'flex justify-center bg-[#111111] font-HelveticaNowText_Regularl')
+      
+      // Set class and HTML content for the FooterComponent
       this.innerHTML = `
       <div class="w-[1440px] p-[40px] pt-10">
         <div class="flex justify-between flex-col mob:flex-row mb-4">
