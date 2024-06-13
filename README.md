@@ -294,13 +294,12 @@ Certainly! Consistent file naming conventions can greatly improve project organi
 ## Design Reference
 
 ### Figma Design 
+
 [Figma Design - Nike.com](https://www.figma.com/design/WAdVLyQNdt7vA8YCE1Hl6I/Nike.com?node-id=0-1&t=FUAT8sv7UbFe19ti-1)
 
 ### Information Architecture
+
 [Figma IA - Thna Nike](https://www.figma.com/board/8OuohLlEBgCQVp9y6bT9vM/Thna-nike?node-id=0-1&t=0SGXujWzv5fXI4fZ-1)
-
 Check out my Nike Clone website [here](https://nike-clone-psi.vercel.app/).
-
-
 
 **Name**: Hong Than Brathna  
